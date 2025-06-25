@@ -23,7 +23,7 @@ export default function Footer() {
                 </div>
             </div>
 
-            <div className="container mx-auto px-4 py-8 grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-64">
+            <div className="container mx-auto px-6 md:px-0 py-8 grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-64">
                 <div className="flex flex-col gap-6">
                     <h1 className="text-4xl font-semibold leading-snug">
                         {t('footer.tagline')}
@@ -45,10 +45,19 @@ export default function Footer() {
                         <p>+62 838 7963 0647</p>
                         <p>+62 857 7025 3105</p>
                         <h2 className="mt-4 text-[#595A5B] font-semibold">{t('footer.social')}</h2>
-                        <div className="flex gap-4">
-                            <Facebook className="w-5 h-5" />
-                            <Instagram className="w-5 h-5" />
-                            <Twitter className="w-5 h-5" />
+                        <div className="flex gap-2 md:gap-3">
+                            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                                <img src="/icons/facebook.svg" alt="Facebook" className="w-5 h-5 md:w-7 md:h-7 hover:opacity-80 transition" />
+                            </a>
+                            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+                                <img src="/icons/youtube.svg" alt="Youtube" className="w-5 h-5 md:w-7 md:h-7 hover:opacity-80 transition" />
+                            </a>
+                            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                                <img src="/icons/instagram.svg" alt="Instagram" className="w-5 h-5 md:w-7 md:h-7 hover:opacity-80 transition" />
+                            </a>
+                            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                                <img src="/icons/twitter.svg" alt="Twitter" className="w-5 h-5 md:w-7 md:h-7 hover:opacity-80 transition" />
+                            </a>
                         </div>
                     </div>
                 </div>
