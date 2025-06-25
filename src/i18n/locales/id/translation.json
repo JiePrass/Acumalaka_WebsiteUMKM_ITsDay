@@ -6,7 +6,8 @@
         "ai": "Batikan AI",
         "contact": "Kontak",
         "location": "Bogor",
-        "language": "Bahasa Indonesia"
+        "language": "Bahasa Indonesia",
+        "discountText": "Diskon <highlight>Rp.250.000</highlight> Untuk Fashion"
     },
     "footer": {
         "tagline": "Batikan: Teman Setiamu dalam Berbatik.",
@@ -18,17 +19,20 @@
         "scrollLine1": "Kembali Ke Halaman",
         "scrollLine2": "Paling Atas"
     },
-    "promo": {
-        "discountText": "Diskon <1>Rp.250.000</1> Untuk Fashion"
-    },
     "hero": {
         "badge": "Terbaru",
         "cta": "Belanja Sekarang",
         "titleLine1": "AYO BELI &",
         "titleLine2": "DUKUNG BATIK",
-        "titleLine3": "KHAS <1>JAWA BARAT</1>",
+        "titleLine3": "KHAS <highlight>JAWA BARAT</highlight>",
         "description": "Ribuan pelanggan sudah bergabung dan menjaga warisan budaya bersama batikan",
         "hashtag1": "#BatikJabar",
         "hashtag2": "#JabarTerbaik"
+    },
+    "about": {
+        "title1": "Batikan",
+        "title2": "2025",
+        "headline": "Lestarikan Warisan Nusantara Lewat Teknologi, <highlight>Kenali, Dokumentasikan, dan Bagikan Kecantikan Batik</highlight>",
+        "community": "Bergabunglah dengan komunitas pelestari batik dari pengrajin, peneliti, hingga pecinta budaya di seluruh Indonesia."
     }
 }

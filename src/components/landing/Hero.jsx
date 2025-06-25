@@ -29,9 +29,12 @@ export default function Hero() {
                     <h1 className="md:text-6xl font-extrabold leading-snug">
                         {t("hero.titleLine1")}<br />
                         {t("hero.titleLine2")}<br />
-                        <Trans i18nKey="hero.titleLine3">
-                            FROM <span className="text-primary">WEST JAVA</span>
-                        </Trans>
+                        <Trans
+                        i18nKey="hero.titleLine3"
+                        components={{
+                            highlight: <span className="text-primary" />,
+                        }}
+                    />
                     </h1>
                     <p className="text-gray-600 mt-4 max-w-md">
                         {t("hero.description")}

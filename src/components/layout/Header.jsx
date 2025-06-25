@@ -18,9 +18,12 @@ export default function Header() {
                     </div>
                     <div>
                         <div>
-                            <Trans i18nKey="promo.discountText">
-                                Diskon <span className="text-primary">Rp.250.000</span> Untuk Fashion
-                            </Trans>
+                            <Trans
+                                i18nKey="nav.discountText"
+                                components={{
+                                    highlight: <span className="text-primary" />,
+                                }}
+                            />
                         </div>
                     </div>
                 </div>

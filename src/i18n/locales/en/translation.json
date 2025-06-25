@@ -6,7 +6,8 @@
         "ai": "Batikan AI",
         "contact": "Contact",
         "location": "Bogor",
-        "language": "English"
+        "language": "English",
+        "discountText": "Discount <highlight>Rp.250.000</highlight> For Fashion"
     },
     "footer": {
         "tagline": "Batikan: Your Loyal Friend to Get Batik.",
@@ -18,17 +19,20 @@
         "scrollLine1": "Back to Page",
         "scrollLine2": "Scroll to Top"
     },
-    "promo": {
-        "discountText": "Discount <1>Rp.250.000</1> For Fashion"
-    },
     "hero": {
         "badge": "New",
         "cta": "Buy Now",
         "titleLine1": "LET'S BUY &",
         "titleLine2": "SUPPORT BATIK",
-        "titleLine3": "FROM <1>WEST JAVA</1>",
+        "titleLine3": "FROM <highlight>WEST JAVA</highlight>",
         "description": "Thousands of customers have joined to preserve cultural heritage with Batikan",
         "hashtag1": "#BatikWestJava",
         "hashtag2": "#BestOfJava"
+    },
+    "about": {
+        "title1": "Batikan",
+        "title2": "2025",
+        "headline": "Preserving Indonesian Heritage Through Technology, <highlight>Explore, Document, and Share the Beauty of Batik</highlight>",
+        "community": "Join the batik preservation community from artisans and researchers to cultural enthusiasts across Indonesia."
     }
 }
