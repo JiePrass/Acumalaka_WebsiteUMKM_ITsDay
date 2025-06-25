@@ -4,7 +4,7 @@ export default function About() {
     const { t } = useTranslation();
 
     return (
-        <section className="grid grid-cols-1 md:grid-cols-12 items-center justify-center mx-auto container gap-6 px-4 md:px-0">
+        <section className="grid grid-cols-1 md:grid-cols-12 items-center justify-center mx-auto container gap-6 px-6 md:px-0">
             <div className="flex flex-col h-full justify-between md:col-span-5 text-xl font-bold">
                 <h1>{t("about.title1")}</h1>
                 <h1>{t("about.title2")}</h1>

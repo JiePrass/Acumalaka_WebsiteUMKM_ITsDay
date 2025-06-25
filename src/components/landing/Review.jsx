@@ -20,7 +20,7 @@ export default function Review() {
 
     return (
         <section className="relative w-full py-16 overflow-hidden">
-            <div className=" container mx-auto px-6 md:px-0">
+            <div className="container mx-auto px-6 md:px-0">
                 <div className="justify-between flex items-center mb-10">
                     <div className="flex gap-4 z-10 p-4">
                         <button onClick={handlePrev} className="p-3 bg-black text-white rounded-full">

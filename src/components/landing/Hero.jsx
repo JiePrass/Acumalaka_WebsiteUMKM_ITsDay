@@ -5,7 +5,7 @@ export default function Hero() {
     const { t } = useTranslation()
 
     return (
-        <section className="container mx-auto py-8">
+        <section className="container mx-auto py-8 px-6 md:px-0">
             <div className="grid grid-cols-1 md:grid-cols-12 md:grid-rows-12 gap-4">
                 <div className="relative md:col-span-6 md:row-span-12 rounded-xl overflow-hidden">
                     <img
