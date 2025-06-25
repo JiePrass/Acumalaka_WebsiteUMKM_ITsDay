@@ -10,6 +10,7 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
         id: { translation: id },
         en: { translation: en }
     },
+    lng: 'id',
     fallbackLng: 'id',
     debug: false,
     interpolation: {

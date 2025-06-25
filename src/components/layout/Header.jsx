@@ -17,9 +17,11 @@ export default function Header() {
                         <LanguageSelector />
                     </div>
                     <div>
-                        <span>
-                            {t('promo.discountText', { price: 'Rp 250.000' })}
-                        </span>
+                        <div>
+                            <Trans i18nKey="promo.discountText">
+                                Diskon <span className="text-primary">Rp.250.000</span> Untuk Fashion
+                            </Trans>
+                        </div>
                     </div>
                 </div>
             </div>

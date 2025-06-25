@@ -19,6 +19,16 @@
         "scrollLine2": "Scroll to Top"
     },
     "promo": {
-        "discountText": "Discount {{price}} For Fashion"
+        "discountText": "Discount <1>Rp.250.000</1> For Fashion"
+    },
+    "hero": {
+        "badge": "New",
+        "cta": "Buy Now",
+        "titleLine1": "LET'S BUY &",
+        "titleLine2": "SUPPORT BATIK",
+        "titleLine3": "FROM <1>WEST JAVA</1>",
+        "description": "Thousands of customers have joined to preserve cultural heritage with Batikan",
+        "hashtag1": "#BatikWestJava",
+        "hashtag2": "#BestOfJava"
     }
 }

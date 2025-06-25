@@ -19,6 +19,16 @@
         "scrollLine2": "Paling Atas"
     },
     "promo": {
-        "discountText": "Diskon {{price}} Untuk Fashion"
+        "discountText": "Diskon <1>Rp.250.000</1> Untuk Fashion"
+    },
+    "hero": {
+        "badge": "Terbaru",
+        "cta": "Belanja Sekarang",
+        "titleLine1": "AYO BELI &",
+        "titleLine2": "DUKUNG BATIK",
+        "titleLine3": "KHAS <1>JAWA BARAT</1>",
+        "description": "Ribuan pelanggan sudah bergabung dan menjaga warisan budaya bersama batikan",
+        "hashtag1": "#BatikJabar",
+        "hashtag2": "#JabarTerbaik"
     }
 }
