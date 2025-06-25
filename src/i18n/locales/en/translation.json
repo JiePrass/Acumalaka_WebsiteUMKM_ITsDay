@@ -1,0 +1,24 @@
+{
+    "nav": {
+        "home": "Home",
+        "batik": "Batik",
+        "store": "Store",
+        "ai": "Batikan AI",
+        "contact": "Contact",
+        "location": "Bogor",
+        "language": "English"
+    },
+    "footer": {
+        "tagline": "Batikan: Your Loyal Friend to Get Batik.",
+        "location": "Location",
+        "email": "Email",
+        "contact": "Contact",
+        "social": "Social Media",
+        "rights": "All rights reserved.",
+        "scrollLine1": "Back to Page",
+        "scrollLine2": "Scroll to Top"
+    },
+    "promo": {
+        "discountText": "Discount {{price}} For Fashion"
+    }
+}

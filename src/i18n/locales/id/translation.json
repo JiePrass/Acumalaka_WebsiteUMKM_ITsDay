@@ -1,0 +1,24 @@
+{
+    "nav": {
+        "home": "Beranda",
+        "batik": "Batik",
+        "store": "Toko",
+        "ai": "Batikan AI",
+        "contact": "Kontak",
+        "location": "Bogor",
+        "language": "Bahasa Indonesia"
+    },
+    "footer": {
+        "tagline": "Batikan: Teman Setiamu dalam Berbatik.",
+        "location": "Lokasi",
+        "email": "Email",
+        "contact": "Kontak",
+        "social": "Media Sosial",
+        "rights": "Semua hak dilindungi.",
+        "scrollLine1": "Kembali Ke Halaman",
+        "scrollLine2": "Paling Atas"
+    },
+    "promo": {
+        "discountText": "Diskon {{price}} Untuk Fashion"
+    }
+}
