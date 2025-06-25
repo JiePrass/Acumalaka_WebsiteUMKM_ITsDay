@@ -55,9 +55,11 @@ export default function Footer() {
             </div>
 
             <div className="container mx-auto">
-                <h1 className="text-white text-[380px] mb-8 font-semibold leading-none text-center">
-                    Batikan
-                </h1>
+                <div className="flex justify-center items-center">
+                    <h1 className="text-white text-[350px] mb-8 font-semibold leading-none text-center">
+                        Batikan
+                    </h1>
+                </div>
 
                 {/* Button To Top */}
                 <button
