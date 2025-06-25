@@ -34,5 +34,29 @@
         "title2": "2025",
         "headline": "Lestarikan Warisan Nusantara Lewat Teknologi, <highlight>Kenali, Dokumentasikan, dan Bagikan Kecantikan Batik</highlight>",
         "community": "Bergabunglah dengan komunitas pelestari batik dari pengrajin, peneliti, hingga pecinta budaya di seluruh Indonesia."
+    },
+    "review": {
+        "title": "Kata mereka",
+        "title2": "tentang <highlight>Batikan</highlight>",
+        "reviews": [
+            {
+                "name": "Mulyadi",
+                "role": "Pemerhati Budaya",
+                "text": "Batikan sangat membantu dalam mendokumentasikan ragam motif batik lokal. UI-nya ramah pengguna dan informatif.",
+                "image": "/images/review-mulyadi.png"
+            },
+            {
+                "name": "Agus Prabowo",
+                "role": "Pengrajin Batik",
+                "text": "Dengan Batikan, saya bisa mempromosikan batik buatan saya ke lebih banyak orang. Teknologi ini luar biasa.",
+                "image": "/images/review-agus.png"
+            },
+            {
+                "name": "Dewi Aulia",
+                "role": "Mahasiswa Seni",
+                "text": "Saya sering menggunakan Batikan untuk riset. Informasi yang disajikan lengkap dan terpercaya.",
+                "image": "/images/review-dewi.png"
+            }
+        ]
     }
 }

@@ -34,5 +34,29 @@
         "title2": "2025",
         "headline": "Preserving Indonesian Heritage Through Technology, <highlight>Explore, Document, and Share the Beauty of Batik</highlight>",
         "community": "Join the batik preservation community from artisans and researchers to cultural enthusiasts across Indonesia."
+    },
+    "review": {
+        "title": "What they say",
+        "title2": "about <highlight>Batikan</highlight>",
+        "reviews": [
+            {
+                "name": "Mulyadi",
+                "role": "Cultural Enthusiast",
+                "text": "Batikan helps a lot in documenting local batik patterns. The UI is user-friendly and informative.",
+                "image": "/images/review-mulyadi.png"
+            },
+            {
+                "name": "Agus Prabowo",
+                "role": "Batik Artisan",
+                "text": "With Batikan, I can promote my handmade batik to more people. The technology is amazing.",
+                "image": "/images/review-agus.png"
+            },
+            {
+                "name": "Dewi Aulia",
+                "role": "Art Student",
+                "text": "I often use Batikan for research. The information provided is complete and reliable.",
+                "image": "/images/review-dewi.png"
+            }
+        ]
     }
 }
