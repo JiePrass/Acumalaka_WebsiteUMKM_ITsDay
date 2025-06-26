@@ -58,5 +58,20 @@
                 "image": "/images/review-dewi.png"
             }
         ]
+    },
+    "product": {
+        "title": "Choose Batik That Matches Your Style",
+        "add_to_cart": "Add to Cart",
+        "buy_now": "Buy Now",
+        "discount": "50% Off",
+        "filter": {
+            "all": "All",
+            "best_seller": "Best Seller",
+            "popular": "Popular",
+            "nearest": "Nearest"
+        },
+        "label" : {
+            "new" : "New"
+        }
     }
 }

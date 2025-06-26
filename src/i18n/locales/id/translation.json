@@ -58,5 +58,20 @@
                 "image": "/images/review-dewi.png"
             }
         ]
+    },
+    "product": {
+        "title": "Pilih Batik Sesuai Gayamu",
+        "add_to_cart": "Masukkan Keranjang",
+        "buy_now": "Beli Sekarang",
+        "discount": "Potongan 50%",
+        "filter": {
+            "all": "Semua",
+            "best_seller": "Terlaris",
+            "popular": "Terpopuler",
+            "nearest": "Terdekat"
+        },
+        "label" : {
+            "new" : "Terbaru"
+        }
     }
 }
