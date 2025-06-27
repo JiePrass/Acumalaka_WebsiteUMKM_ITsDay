@@ -5,9 +5,13 @@
         "store": "Store",
         "ai": "Batikan AI",
         "contact": "Contact",
+        "cart": "Cart",
+        "profile": "Profile",
         "location": "Bogor",
         "language": "English",
-        "discountText": "Discount <highlight>Rp.250.000</highlight> For Fashion"
+        "discountText": "Discount <highlight>Rp.250.000</highlight> For Fashion",
+        "search" : "Search",
+        "selectLanguage" : "Select Language"
     },
     "footer": {
         "tagline": "Batikan: Your Loyal Friend to Get Batik.",
@@ -16,8 +20,8 @@
         "contact": "Contact",
         "social": "Social Media",
         "rights": "All rights reserved.",
-        "scrollLine1": "Back to Page",
-        "scrollLine2": "Scroll to Top"
+        "scrollLine1": "Back to Top",
+        "scrollLine2": "of Page"
     },
     "hero": {
         "badge": "New",

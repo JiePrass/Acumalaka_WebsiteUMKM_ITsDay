@@ -5,9 +5,13 @@
         "store": "Toko",
         "ai": "Batikan AI",
         "contact": "Kontak",
+        "cart": "Keranjang",
+        "profile": "Profil",
         "location": "Bogor",
         "language": "Bahasa Indonesia",
-        "discountText": "Diskon <highlight>Rp.250.000</highlight> Untuk Fashion"
+        "discountText": "Diskon <highlight>Rp.250.000</highlight> Untuk Fashion",
+        "search" : "Cari",
+        "selectLanguage" : "Pilih Bahasa"
     },
     "footer": {
         "tagline": "Batikan: Teman Setiamu dalam Berbatik.",

@@ -14,10 +14,10 @@ export default function Hero() {
                         className="w-full h-full object-cover"
                     />
                     <div className="absolute bg-black/20 inset-0" />
-                    <span className="absolute top-8 left-12 border border-white text-white px-4 py-1 rounded-full font-semibold shadow">
+                    <span className="absolute top-4 md:top-8 left-6 md:left-12 border border-white text-white px-4 py-1 rounded-full font-semibold shadow">
                         {t("hero.badge")}
                     </span>
-                    <a href="/" className="absolute font-semibold bottom-8 right-12 hover:cursor-pointer bg-white px-4 py-2 rounded-full flex items-center gap-2 shadow hover:bg-gray-100 transition">
+                    <a href="/" className="absolute font-semibold bottom-4 md:bottom-8 right-6 md:right-12 hover:cursor-pointer bg-white px-4 py-2 rounded-full flex items-center gap-2 shadow hover:bg-gray-100 transition">
                         {t("hero.cta")}
                         <div className="bg-black text-white p-1.5 rounded-full">
                             <ArrowRight className="w-5 h-5 -rotate-45" />
