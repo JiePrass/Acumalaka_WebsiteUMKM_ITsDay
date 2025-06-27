@@ -1,7 +1,8 @@
 import Hero from "../components/landing/Hero";
 import About from "../components/landing/About";
-import Review from "../components/landing/Review";
 import Product from "../components/landing/Product";
+import BatikanAI from "../components/landing/BatikanAI";
+import Review from "../components/landing/Review";
 
 export default function Home() {
     return (
@@ -9,6 +10,7 @@ export default function Home() {
             <Hero />
             <About />
             <Product />
+            <BatikanAI />
             <Review />
         </main>
     )

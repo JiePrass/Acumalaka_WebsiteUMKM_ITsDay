@@ -9,73 +9,81 @@
         "profile": "Profil",
         "location": "Bogor",
         "language": "Bahasa Indonesia",
-        "discountText": "Diskon <highlight>Rp.250.000</highlight> Untuk Fashion",
-        "search" : "Cari",
-        "selectLanguage" : "Pilih Bahasa"
+        "discountText": "Diskon <highlight>Rp.250.000</highlight> untuk Produk Fashion",
+        "search": "Cari",
+        "selectLanguage": "Pilih Bahasa"
     },
     "footer": {
-        "tagline": "Batikan: Teman Setiamu dalam Berbatik.",
+        "tagline": "Batikan: Teman Setia Anda untuk Mendapatkan Batik.",
         "location": "Lokasi",
         "email": "Email",
         "contact": "Kontak",
         "social": "Media Sosial",
-        "rights": "Semua hak dilindungi.",
-        "scrollLine1": "Kembali Ke Halaman",
-        "scrollLine2": "Paling Atas"
+        "rights": "Seluruh hak cipta dilindungi.",
+        "scrollLine1": "Kembali ke Atas",
+        "scrollLine2": "Halaman"
     },
     "hero": {
-        "badge": "Terbaru",
-        "cta": "Belanja Sekarang",
+        "badge": "Baru",
+        "cta": "Beli Sekarang",
         "titleLine1": "AYO BELI &",
         "titleLine2": "DUKUNG BATIK",
-        "titleLine3": "KHAS <highlight>JAWA BARAT</highlight>",
-        "description": "Ribuan pelanggan sudah bergabung dan menjaga warisan budaya bersama batikan",
-        "hashtag1": "#BatikJabar",
-        "hashtag2": "#JabarTerbaik"
+        "titleLine3": "DARI <highlight>JAWA BARAT</highlight>",
+        "description": "Ribuan pelanggan telah bergabung untuk melestarikan warisan budaya bersama Batikan",
+        "hashtag1": "#BatikJawaBarat",
+        "hashtag2": "#TerbaikDariJawa"
     },
     "about": {
         "title1": "Batikan",
         "title2": "2025",
-        "headline": "Lestarikan Warisan Nusantara Lewat Teknologi, <highlight>Kenali, Dokumentasikan, dan Bagikan Kecantikan Batik</highlight>",
-        "community": "Bergabunglah dengan komunitas pelestari batik dari pengrajin, peneliti, hingga pecinta budaya di seluruh Indonesia."
+        "headline": "Melestarikan Warisan Indonesia Lewat Teknologi, <highlight>Eksplorasi, Dokumentasi, dan Bagikan Keindahan Batik</highlight>",
+        "community": "Bergabunglah dengan komunitas pelestarian batik dari perajin, peneliti, hingga pecinta budaya di seluruh Indonesia."
     },
     "review": {
-        "title": "Kata mereka",
+        "title": "Apa kata mereka",
         "title2": "tentang <highlight>Batikan</highlight>",
         "reviews": [
             {
-                "name": "Mulyadi",
-                "role": "Pemerhati Budaya",
-                "text": "Batikan sangat membantu dalam mendokumentasikan ragam motif batik lokal. UI-nya ramah pengguna dan informatif.",
+                "name": "Mulyadi Permana",
+                "role": "Pelanggan",
+                "text": "Saya sangat puas belanja di Batikan! Koleksi batiknya lengkap dan kualitas kainnya bagus banget.",
                 "image": "/images/review-mulyadi.png"
             },
             {
-                "name": "Agus Prabowo",
-                "role": "Pengrajin Batik",
-                "text": "Dengan Batikan, saya bisa mempromosikan batik buatan saya ke lebih banyak orang. Teknologi ini luar biasa.",
+                "name": "Agus Setiawan",
+                "role": "Pecinta Batik",
+                "text": "Batik di Batikan sangat beragam dan harganya bersaing. Pengiriman juga cepat dan rapi!",
                 "image": "/images/review-agus.png"
             },
             {
-                "name": "Dewi Aulia",
-                "role": "Mahasiswa Seni",
-                "text": "Saya sering menggunakan Batikan untuk riset. Informasi yang disajikan lengkap dan terpercaya.",
+                "name": "Dewi Maharani",
+                "role": "Fashion Enthusiast",
+                "text": "Aku suka banget fitur AI-nya! Bisa coba gaya batik sebelum beli. Sangat membantu dalam memilih.",
                 "image": "/images/review-dewi.png"
             }
         ]
     },
     "product": {
-        "title": "Pilih Batik Sesuai Gayamu",
-        "add_to_cart": "Masukkan Keranjang",
+        "title": "Pilih Batik yang Sesuai dengan Gayamu",
+        "add_to_cart": "Masukkan ke Keranjang",
         "buy_now": "Beli Sekarang",
-        "discount": "Potongan 50%",
+        "discount": "Diskon 50%",
         "filter": {
             "all": "Semua",
             "best_seller": "Terlaris",
-            "popular": "Terpopuler",
+            "popular": "Populer",
             "nearest": "Terdekat"
         },
-        "label" : {
-            "new" : "Terbaru"
+        "label": {
+            "new": "Baru"
         }
+    },
+    "batikanAI": {
+        "title": "Batikan AI",
+        "description": "Temukan gaya batik unikmu dengan bantuan AI. Dipercaya oleh ribuan pengguna di seluruh Indonesia.",
+        "upload_button": "Unggah Fotomu",
+        "generate_button": "Generate Gaya Batikku",
+        "choose_motif": "Pilih Motif Batikmu",
+        "select_button": "Pilih Motif Ini"
     }
 }

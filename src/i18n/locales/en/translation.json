@@ -9,9 +9,9 @@
         "profile": "Profile",
         "location": "Bogor",
         "language": "English",
-        "discountText": "Discount <highlight>Rp.250.000</highlight> For Fashion",
-        "search" : "Search",
-        "selectLanguage" : "Select Language"
+        "discountText": "Discount <highlight>Rp.250,000</highlight> For Fashion",
+        "search": "Search",
+        "selectLanguage": "Select Language"
     },
     "footer": {
         "tagline": "Batikan: Your Loyal Friend to Get Batik.",
@@ -40,25 +40,25 @@
         "community": "Join the batik preservation community from artisans and researchers to cultural enthusiasts across Indonesia."
     },
     "review": {
-        "title": "What they say",
+        "title": "What They Say",
         "title2": "about <highlight>Batikan</highlight>",
         "reviews": [
             {
-                "name": "Mulyadi",
-                "role": "Cultural Enthusiast",
-                "text": "Batikan helps a lot in documenting local batik patterns. The UI is user-friendly and informative.",
+                "name": "Mulyadi Permana",
+                "role": "Customer",
+                "text": "I'm very satisfied shopping at Batikan! The batik collection is extensive and the fabric quality is excellent.",
                 "image": "/images/review-mulyadi.png"
             },
             {
-                "name": "Agus Prabowo",
-                "role": "Batik Artisan",
-                "text": "With Batikan, I can promote my handmade batik to more people. The technology is amazing.",
+                "name": "Agus Setiawan",
+                "role": "Batik Lover",
+                "text": "Batikan offers a wide variety of batik with great prices. The delivery was fast and neatly packed!",
                 "image": "/images/review-agus.png"
             },
             {
-                "name": "Dewi Aulia",
-                "role": "Art Student",
-                "text": "I often use Batikan for research. The information provided is complete and reliable.",
+                "name": "Dewi Maharani",
+                "role": "Fashion Enthusiast",
+                "text": "I really love the AI feature! It helps me try out different batik styles before buying. Super helpful!",
                 "image": "/images/review-dewi.png"
             }
         ]
@@ -74,8 +74,16 @@
             "popular": "Popular",
             "nearest": "Nearest"
         },
-        "label" : {
-            "new" : "New"
+        "label": {
+            "new": "New"
         }
+    },
+    "batikanAI": {
+        "title": "Batikan AI",
+        "description": "Discover your unique batik style with the help of AI. Trusted by thousands of users across Indonesia.",
+        "upload_button": "Upload Your Photo",
+        "generate_button": "Generate My Batik Style",
+        "choose_motif": "Choose Your Batik Motif",
+        "select_button": "Select This Motif"
     }
 }
