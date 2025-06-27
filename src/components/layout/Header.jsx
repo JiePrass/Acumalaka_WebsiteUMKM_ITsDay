@@ -44,7 +44,7 @@ export default function Header() {
             <div className="container mx-auto py-3 px-6 md:px-0 flex justify-between items-center">
                 <div className="text-2xl font-bold text-primary">Batikan.</div>
 
-                <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-gray-700">
+                <nav className="hidden md:flex items-center gap-6 text-lg font-medium text-gray-700">
                     <a href="#" className="text-primary">{t("nav.home")}</a>
                     <a href="#">{t("nav.batik")}</a>
                     <a href="#">{t("nav.store")}</a>

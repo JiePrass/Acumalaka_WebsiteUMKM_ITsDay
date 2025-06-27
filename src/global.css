@@ -2,7 +2,7 @@
 
 @theme {
     --font-display: "Plus Jakarta Sans", sans-serif;
-
+    --font-narrow: "PT Sans Narrow", sans-serif;
     --color-primary: #9D6B24;
     --color-secondary: #6B7280;
     --color-accent: #F59E0B;
