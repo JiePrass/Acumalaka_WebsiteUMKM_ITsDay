@@ -7,8 +7,16 @@ import { motion, AnimatePresence } from 'framer-motion'
 
 const languages = [
     { code: 'id', label: 'Bahasa Indonesia', iso: 'ID' },
-    { code: 'en', label: 'English', iso: 'US' }
+    { code: 'en', label: 'English', iso: 'US' },
+    { code: 'zh', label: '中文 (Chinese)', iso: 'CN' },
+    { code: 'es', label: 'Español (Spanish)', iso: 'ES' },
+    { code: 'ko', label: '한국어 (Korean)', iso: 'KR' },
+    { code: 'de', label: 'Deutsch (German)', iso: 'DE' },
+    { code: 'fr', label: 'Français (French)', iso: 'FR' },
+    { code: 'ar', label: 'العربية (Arabic)', iso: 'SA' },
+    { code: 'ph', label: 'Tagalog (Filipino)', iso: 'PH' }
 ]
+
 
 export default function LanguageSelector() {
     const { i18n } = useTranslation()

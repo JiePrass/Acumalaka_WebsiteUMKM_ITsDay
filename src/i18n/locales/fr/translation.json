@@ -1,0 +1,89 @@
+{
+    "nav": {
+        "home": "Accueil",
+        "batik": "Batik",
+        "store": "Boutique",
+        "ai": "Batikan IA",
+        "contact": "Contact",
+        "cart": "Panier",
+        "profile": "Profil",
+        "location": "Bogor",
+        "language": "Français",
+        "discountText": "Remise de <highlight>Rp.250 000</highlight> sur la mode",
+        "search": "Recherche",
+        "selectLanguage": "Choisir la langue"
+    },
+    "footer": {
+        "tagline": "Batikan : votre fidèle ami pour obtenir du batik.",
+        "location": "Emplacement",
+        "email": "E-mail",
+        "contact": "Contact",
+        "social": "Réseaux sociaux",
+        "rights": "Tous droits réservés.",
+        "scrollLine1": "Retour en haut",
+        "scrollLine2": "de la page"
+    },
+    "hero": {
+        "badge": "Nouveau",
+        "cta": "Acheter maintenant",
+        "titleLine1": "ACHETONS &",
+        "titleLine2": "SOUTENONS LE BATIK",
+        "titleLine3": "DE <highlight>JAVA OCCIDENTAL</highlight>",
+        "description": "Des milliers de clients ont rejoint Batikan pour préserver le patrimoine culturel.",
+        "hashtag1": "#BatikJavaOccidental",
+        "hashtag2": "#LeMeilleurDeJava"
+    },
+    "about": {
+        "title1": "Batikan",
+        "title2": "2025",
+        "headline": "Préserver le patrimoine indonésien grâce à la technologie, <highlight>explorez, documentez et partagez la beauté du batik</highlight>",
+        "community": "Rejoignez la communauté de préservation du batik composée d'artisans, de chercheurs et de passionnés de culture à travers toute l'Indonésie."
+    },
+    "review": {
+        "title": "Ce qu'ils disent",
+        "title2": "à propos de <highlight>Batikan</highlight>",
+        "reviews": [
+            {
+                "name": "Mulyadi Permana",
+                "role": "Client",
+                "text": "Je suis très satisfait de mes achats sur Batikan ! La collection est vaste et la qualité du tissu est excellente.",
+                "image": "/images/review-mulyadi.png"
+            },
+            {
+                "name": "Agus Setiawan",
+                "role": "Passionné de batik",
+                "text": "Batikan offre une large gamme de batiks à des prix très intéressants. Livraison rapide et bien emballée !",
+                "image": "/images/review-agus.png"
+            },
+            {
+                "name": "Dewi Maharani",
+                "role": "Amatrice de mode",
+                "text": "J'adore la fonction IA ! Elle m’aide à essayer différents styles avant d’acheter. Super utile !",
+                "image": "/images/review-dewi.png"
+            }
+        ]
+    },
+    "product": {
+        "title": "Choisissez le batik qui correspond à votre style",
+        "add_to_cart": "Ajouter au panier",
+        "buy_now": "Acheter maintenant",
+        "discount": "50% de réduction",
+        "filter": {
+            "all": "Tous",
+            "best_seller": "Meilleures ventes",
+            "popular": "Populaire",
+            "nearest": "Le plus proche"
+        },
+        "label": {
+            "new": "Nouveau"
+        }
+    },
+    "batikanAI": {
+        "title": "Batikan IA",
+        "description": "Découvrez votre style de batik unique grâce à l'IA. Approuvé par des milliers d'utilisateurs en Indonésie.",
+        "upload_button": "Télécharger votre photo",
+        "generate_button": "Générer mon style de batik",
+        "choose_motif": "Choisissez votre motif batik",
+        "select_button": "Sélectionner ce motif"
+    }
+}

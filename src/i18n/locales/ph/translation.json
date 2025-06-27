@@ -1,0 +1,89 @@
+{
+    "nav": {
+        "home": "Home",
+        "batik": "Batik",
+        "store": "Tindahan",
+        "ai": "Batikan AI",
+        "contact": "Makipag-ugnayan",
+        "cart": "Cart",
+        "profile": "Profile",
+        "location": "Bogor",
+        "language": "Tagalog",
+        "discountText": "Diskwento ng <highlight>₱250,000</highlight> sa Fashion",
+        "search": "Maghanap",
+        "selectLanguage": "Piliin ang Wika"
+    },
+    "footer": {
+        "tagline": "Batikan: Ang tapat mong kaibigan sa pagkuha ng batik.",
+        "location": "Lokasyon",
+        "email": "Email",
+        "contact": "Makipag-ugnayan",
+        "social": "Social Media",
+        "rights": "Lahat ng karapatan ay nakalaan.",
+        "scrollLine1": "Bumalik sa Itaas",
+        "scrollLine2": "ng Pahina"
+    },
+    "hero": {
+        "badge": "Bago",
+        "cta": "Bumili Ngayon",
+        "titleLine1": "BUMILI AT",
+        "titleLine2": "SUPORTAHAN ANG BATIK",
+        "titleLine3": "MULA SA <highlight>KANLURANG JAVA</highlight>",
+        "description": "Libu-libong mamimili ang sumama upang mapanatili ang kulturang pamana kasama ang Batikan.",
+        "hashtag1": "#BatikKanlurangJava",
+        "hashtag2": "#PinakamahusayNgJava"
+    },
+    "about": {
+        "title1": "Batikan",
+        "title2": "2025",
+        "headline": "Pinapanatili ang Pamanang Indones sa Pamamagitan ng Teknolohiya, <highlight>Galugarin, I-dokumento, at Ibahagi ang Ganda ng Batik</highlight>",
+        "community": "Sumali sa komunidad ng mga tagapangalaga ng batik—mula sa mga artisan, mananaliksik, hanggang sa mga mahilig sa kultura sa buong Indonesia."
+    },
+    "review": {
+        "title": "Sabi Nila",
+        "title2": "tungkol sa <highlight>Batikan</highlight>",
+        "reviews": [
+            {
+                "name": "Mulyadi Permana",
+                "role": "Customer",
+                "text": "Sobrang saya ko sa pamimili sa Batikan! Marami silang koleksyon at maganda ang kalidad ng tela.",
+                "image": "/images/review-mulyadi.png"
+            },
+            {
+                "name": "Agus Setiawan",
+                "role": "Batik Lover",
+                "text": "Ang daming pagpipilian ng batik sa murang halaga. Mabilis pa ang delivery at maayos ang packaging!",
+                "image": "/images/review-agus.png"
+            },
+            {
+                "name": "Dewi Maharani",
+                "role": "Tagahanga ng Fashion",
+                "text": "Gustong-gusto ko yung AI feature! Natutulungan akong pumili ng tamang istilo bago bumili. Ang galing!",
+                "image": "/images/review-dewi.png"
+            }
+        ]
+    },
+    "product": {
+        "title": "Pumili ng Batik na Babagay sa Iyong Estilo",
+        "add_to_cart": "Idagdag sa Cart",
+        "buy_now": "Bumili Ngayon",
+        "discount": "50% Diskwento",
+        "filter": {
+            "all": "Lahat",
+            "best_seller": "Pinakamabenta",
+            "popular": "Sikat",
+            "nearest": "Malapit"
+        },
+        "label": {
+            "new": "Bago"
+        }
+    },
+    "batikanAI": {
+        "title": "Batikan AI",
+        "description": "Tuklasin ang iyong natatanging batik style gamit ang AI. Pinagkakatiwalaan ng libu-libong tao sa buong Indonesia.",
+        "upload_button": "I-upload ang Iyong Larawan",
+        "generate_button": "Gumawa ng Aking Batik Style",
+        "choose_motif": "Pumili ng Batik Motif",
+        "select_button": "Piliin ang Motif na Ito"
+    }
+}

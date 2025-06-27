@@ -1,0 +1,89 @@
+{
+    "nav": {
+        "home": "首页",
+        "batik": "蜡染",
+        "store": "商店",
+        "ai": "Batikan AI",
+        "contact": "联系",
+        "cart": "购物车",
+        "profile": "个人资料",
+        "location": "茂物",
+        "language": "中文",
+        "discountText": "时尚折扣 <highlight>Rp.250,000</highlight>",
+        "search": "搜索",
+        "selectLanguage": "选择语言"
+    },
+    "footer": {
+        "tagline": "Batikan：获取蜡染的忠实伙伴。",
+        "location": "地址",
+        "email": "电子邮件",
+        "contact": "联系方式",
+        "social": "社交媒体",
+        "rights": "版权所有。",
+        "scrollLine1": "返回顶部",
+        "scrollLine2": "页面"
+    },
+    "hero": {
+        "badge": "新品",
+        "cta": "立即购买",
+        "titleLine1": "一起购买并",
+        "titleLine2": "支持蜡染",
+        "titleLine3": "来自 <highlight>西爪哇</highlight>",
+        "description": "成千上万的顾客已加入 Batikan，共同守护文化遗产。",
+        "hashtag1": "#西爪哇蜡染",
+        "hashtag2": "#爪哇之最"
+    },
+    "about": {
+        "title1": "Batikan",
+        "title2": "2025",
+        "headline": "通过技术保护印尼遗产，<highlight>探索、记录并分享蜡染之美</highlight>",
+        "community": "加入来自印尼各地的工匠、研究人员和文化爱好者的蜡染保护社区。"
+    },
+    "review": {
+        "title": "他们怎么说",
+        "title2": "关于 <highlight>Batikan</highlight>",
+        "reviews": [
+            {
+                "name": "Mulyadi Permana",
+                "role": "顾客",
+                "text": "我对 Batikan 的购物体验非常满意！蜡染种类丰富，布料质量也很棒。",
+                "image": "/images/review-mulyadi.png"
+            },
+            {
+                "name": "Agus Setiawan",
+                "role": "蜡染爱好者",
+                "text": "Batikan 提供多种蜡染选择，价格合理，配送迅速又整洁！",
+                "image": "/images/review-agus.png"
+            },
+            {
+                "name": "Dewi Maharani",
+                "role": "时尚爱好者",
+                "text": "我特别喜欢 AI 功能！可以在购买前试穿不同蜡染风格，太实用了！",
+                "image": "/images/review-dewi.png"
+            }
+        ]
+    },
+    "product": {
+        "title": "选择适合您风格的蜡染",
+        "add_to_cart": "加入购物车",
+        "buy_now": "立即购买",
+        "discount": "五折优惠",
+        "filter": {
+            "all": "全部",
+            "best_seller": "畅销",
+            "popular": "受欢迎",
+            "nearest": "最近"
+        },
+        "label": {
+            "new": "新品"
+        }
+    },
+    "batikanAI": {
+        "title": "Batikan AI",
+        "description": "借助 AI 发现您的独特蜡染风格，已被印尼各地数千用户信赖。",
+        "upload_button": "上传照片",
+        "generate_button": "生成我的蜡染风格",
+        "choose_motif": "选择蜡染图案",
+        "select_button": "选择此图案"
+    }
+}
