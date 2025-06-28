@@ -28,7 +28,7 @@ export default function ProductCard({ product, isHovered, onHover, onLeave }) {
                 <img
                     src={product.image}
                     alt={product.title}
-                    className="w-4/6 object-cover"
+                    className="w-4/6 object-contain"
                 />
 
                 <AnimatePresence>

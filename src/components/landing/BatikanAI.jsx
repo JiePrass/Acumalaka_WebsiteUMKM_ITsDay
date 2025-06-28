@@ -1,22 +1,44 @@
+/* eslint-disable no-unused-vars */
 import { useState, useRef } from "react";
-// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
-// Data motif batik yang tersedia
+// Data motif batik
 const motifs = [
-    { id: 1, src: "/images/batik-megamendung.png", label: "Megamendung" },
-    { id: 2, src: "/images/batik-jabar.png", label: "Jabar" },
+    {
+        id: 1,
+        src: "/images/batik-megamendung-biru.png",
+        label: "Megamendung",
+        modelSrc: "/images/model-megamendung-biru.png",
+    },
+    {
+        id: 2,
+        src: "/images/batik-truntum-parang.png",
+        label: "Truntum Parang",
+        modelSrc: "/images/model-truntum-parang.png",
+    },
+    {
+        id: 3,
+        src: "/images/batik-megamendung-hitam.png",
+        label: "Megamendung Hitam",
+        modelSrc: "/images/model-megamendung-hitam.png",
+    },
+    {
+        id: 4,
+        src: "/images/batik-megamendung-merah.png",
+        label: "Megamendung Hitam",
+        modelSrc: "/images/model-megamendung-merah.png",
+    },
 ];
 
 export default function BatikanAI() {
     const { t } = useTranslation();
-    const [image, setImage] = useState("/images/model.png");
+    const [image, setImage] = useState(motifs[0].modelSrc);
     const [motifIndex, setMotifIndex] = useState(0);
     const inputRef = useRef(null);
 
-    // Handle ketika user mengupload gambar
+    // Upload gambar custom dari user
     const handleImageUpload = (e) => {
         const file = e.target.files[0];
         if (!file) return;
@@ -24,17 +46,20 @@ export default function BatikanAI() {
         setImage(imageURL);
     };
 
-    // Navigasi ke motif sebelumnya
+    // Ganti model sesuai motif yang dipilih
+    const handleSelectMotif = (modelSrc) => {
+        setImage(modelSrc);
+    };
+
+    // Navigasi carousel
     const handlePrev = () => {
         setMotifIndex((prev) => (prev - 1 + motifs.length) % motifs.length);
     };
 
-    // Navigasi ke motif berikutnya
     const handleNext = () => {
         setMotifIndex((prev) => (prev + 1) % motifs.length);
     };
 
-    // Menampilkan dua motif aktif
     const visibleMotifs = [
         motifs[motifIndex % motifs.length],
         motifs[(motifIndex + 1) % motifs.length],
@@ -43,16 +68,14 @@ export default function BatikanAI() {
     return (
         <section className="bg-card">
             <div className="container mx-auto flex flex-col md:flex-row gap-10 pt-8">
-                {/* Kolom kiri: Upload dan tombol */}
+                {/* Kolom kiri */}
                 <div className="flex flex-col gap-6 pt-12 order-1 px-6 md:px-12 md:w-1/3 w-full">
                     <div>
                         <h1 className="text-6xl font-bold font-narrow">Batikan AI</h1>
-                        <p className="text-gray-500 mt-2">
-                            {t("batikanAI.description")}
-                        </p>
+                        <p className="text-gray-500 mt-2">{t("batikanAI.description")}</p>
                     </div>
 
-                    {/* Preview dan upload gambar */}
+                    {/* Upload Preview */}
                     <div className="relative w-full md:max-w-xs rounded-xl overflow-hidden bg-white">
                         <div className="absolute inset-0 z-10 bg-black/40" />
                         <img
@@ -75,13 +98,13 @@ export default function BatikanAI() {
                         />
                     </div>
 
-                    {/* Tombol generate */}
+                    {/* Tombol Generate */}
                     <button className="bg-white w-full flex justify-center text-black font-semibold rounded-full py-3 shadow hover:bg-gray-100 transition">
                         {t("batikanAI.generate_button")}
                     </button>
                 </div>
 
-                {/* Kolom tengah: Gambar model */}
+                {/* Kolom Tengah */}
                 <div className="md:w-1/3 w-full order-3 md:order-2 flex justify-center">
                     <img
                         src={image}
@@ -90,13 +113,13 @@ export default function BatikanAI() {
                     />
                 </div>
 
-                {/* Kolom kanan: Pilihan motif */}
-                <div className="md:w-1/3 w-full order-2 md:order-3 pl-6 pb-6 flex flex-col items-center gap-4 z-5">
+                {/* Kolom Kanan */}
+                <div className="md:w-1/3 w-full order-2 md:order-3 pl-6 pb-6 md:pt-18 flex flex-col items-center gap-4 z-5">
                     <h2 className="text-5xl w-full text-start font-semibold font-narrow">
                         {t("batikanAI.choose_motif")}
                     </h2>
 
-                    {/* Carousel motif */}
+                    {/* Carousel Motif */}
                     <div className="w-full overflow-hidden">
                         <motion.div
                             className="flex gap-4"
@@ -118,7 +141,10 @@ export default function BatikanAI() {
                                     />
                                     {index === 0 && (
                                         <div className="absolute inset-0 bg-black/40 flex justify-center items-center">
-                                            <button className="bg-white text-black font-semibold rounded-full shadow px-4 py-2 hover:bg-gray-100 transition">
+                                            <button
+                                                onClick={() => handleSelectMotif(motif.modelSrc)}
+                                                className="bg-white text-black font-semibold rounded-full shadow px-4 py-2 hover:bg-gray-100 transition"
+                                            >
                                                 {t("batikanAI.select_button")}
                                             </button>
                                         </div>
@@ -128,7 +154,7 @@ export default function BatikanAI() {
                         </motion.div>
                     </div>
 
-                    {/* Navigasi carousel */}
+                    {/* Navigasi */}
                     <div className="flex items-center gap-2">
                         <button
                             onClick={handlePrev}
