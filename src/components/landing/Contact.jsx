@@ -78,7 +78,7 @@ export default function Contact() {
                 </div>
             </div>
 
-            <div className="flex w-full md:w-1/2">
+            <div className="flex w-full md:w-1/2 md:order-2 order-1">
                 <img
                     src="/images/pengrajin.png"
                     alt="Pengrajin Batik"
