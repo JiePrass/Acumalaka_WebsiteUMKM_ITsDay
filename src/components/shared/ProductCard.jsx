@@ -6,7 +6,7 @@ export default function ProductCard({ product, isHovered, onHover, onLeave }) {
     const { t } = useTranslation();
 
     return (
-        <div className="relative col-span-3 md:col-span-4 rounded-xl transition bg-white">
+        <div className="relative col-span-3 md:col-span-4 rounded-xl transition">
             {product.label && (
                 <span className="absolute top-2 md:top-4 font-medium left-2 md:left-4 z-10 bg-white text-black text-xs md:text-sm px-2.5 py-1 md:px-4 md:py-2 rounded-full">
                     {t(`product.label.${product.label}`)}
