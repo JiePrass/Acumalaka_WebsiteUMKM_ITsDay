@@ -11,7 +11,7 @@ export default function About() {
             </div>
 
             <div className="md:col-span-7 space-y-16">
-                <h2 className="text-2xl md:text-5xl font-narrow font-semibold text-gray-900 leading-snug">
+                <h2 className="text-2xl md:text-5xl font-semibold text-gray-900 leading-snug">
                     <Trans
                         i18nKey="about.headline"
                         components={{

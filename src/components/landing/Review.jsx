@@ -19,7 +19,7 @@ export default function Review() {
     }
 
     return (
-        <section className="relative w-full bg-card py-12 overflow-hidden">
+        <section className="relative w-full bg-[#EAEAEA] pt-12 pb-18 overflow-hidden">
             <div className="container mx-auto px-6 md:px-0">
                 <div className="justify-between flex items-center mb-10">
                     <div className="flex gap-4 z-10 p-4">

@@ -8,7 +8,7 @@ import Contact from "../components/landing/Contact";
 
 export default function Home() {
     return (
-        <main className="min-h-screen space-y-16 md:space-y-24 mb-12 md:mb-24 bg-background">
+        <main className="min-h-screen space-y-16 md:space-y-[80px] mb-12 md:mb-24 bg-background">
             <Hero />
             <About />
             <Product />

@@ -46,7 +46,7 @@ export default function BatikanAI() {
                         </p>
                     </div>
 
-                    <div className="relative w-full max-w-xs rounded-xl overflow-hidden bg-white">
+                    <div className="relative w-full md:max-w-xs rounded-xl overflow-hidden bg-white">
                         <div className="absolute inset-0 z-10 bg-black/40" />
                         <img
                             src={image}
