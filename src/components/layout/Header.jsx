@@ -21,7 +21,7 @@ export default function Header() {
     ]
 
     return (
-        <header className="md:border-b">
+        <header className="md:border-b pt-4 md:pt-0">
             {/* Top Bar */}
             <div className="border-b hidden md:block">
                 <div className="flex justify-between items-center text-sm py-2 container mx-auto text-gray-600 relative">

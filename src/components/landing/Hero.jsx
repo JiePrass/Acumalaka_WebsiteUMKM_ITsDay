@@ -26,7 +26,7 @@ export default function Hero() {
                 </div>
 
                 <div className="md:col-span-6 md:row-span-7 bg-card rounded-xl px-6 py-8 flex flex-col justify-center">
-                    <h1 className="md:text-7xl font-extrabold leading-snug font-narrow">
+                    <h1 className="md:text-7xl text-[32px] font-extrabold leading-snug font-narrow">
                         {t("hero.titleLine1")}<br />
                         {t("hero.titleLine2")}<br />
                         <Trans

@@ -73,7 +73,7 @@ export default function BatikanAI() {
             </div>
 
             {/* TENGAH */}
-            <div className="md:w-1/3 w-full flex justify-center">
+            <div className="md:w-1/3 w-full order-3 flex justify-center">
                 <img
                     src={image}
                     alt="Model Batik"
