@@ -1,5 +1,8 @@
-import { useTranslation, Trans } from "react-i18next";
+/* eslint-disable no-unused-vars */
+import { useRef } from "react";
+import { useTranslation } from "react-i18next";
 import { ArrowUp } from "lucide-react";
+import { motion, useInView } from "framer-motion";
 
 export default function Footer() {
     const { t } = useTranslation();
@@ -9,18 +12,35 @@ export default function Footer() {
         window.scrollTo({ top: 0, behavior: "smooth" });
     };
 
+    const sectionRef = useRef(null);
+    const isInView = useInView(sectionRef, { once: true, amount: 0.2 });
+
+    const fadeUp = {
+        hidden: { opacity: 0, y: 40 },
+        show: {
+            opacity: 1,
+            y: 0,
+            transition: { duration: 0.6, ease: "easeOut" },
+        },
+    };
+
     return (
-        <footer className="bg-neutral-900 text-white py-8">
-            {/* Header dan Navigasi */}
-            <div className="container mx-auto px-6 md:px-0 flex flex-col md:flex-row md:justify-between md:items-center gap-6">
-                {/* Logo ITSDAY */}
+        <footer
+            ref={sectionRef}
+            className="bg-neutral-900 text-white py-8 overflow-hidden"
+        >
+            <motion.div
+                className="container mx-auto px-6 md:px-0 flex flex-col md:flex-row md:justify-between md:items-center gap-6"
+                variants={fadeUp}
+                initial="hidden"
+                animate={isInView ? "show" : "hidden"}
+            >
                 <img
                     src="images/itsday.png"
                     alt="Logo"
                     className="object-contain w-18 h-auto"
                 />
 
-                {/* Navigasi utama (desktop) */}
                 <div className="hidden md:flex gap-4 flex-wrap">
                     {["home", "batik", "store", "ai", "contact"].map((key) => (
                         <a
@@ -32,17 +52,19 @@ export default function Footer() {
                         </a>
                     ))}
                 </div>
-            </div>
+            </motion.div>
 
-            {/* Konten utama footer */}
-            <div className="container mx-auto px-6 md:px-0 py-8 grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-64">
-                {/* Kiri: tagline dan navigasi (mobile) */}
+            <motion.div
+                className="container mx-auto px-6 md:px-0 py-8 grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-64"
+                variants={fadeUp}
+                initial="hidden"
+                animate={isInView ? "show" : "hidden"}
+            >
                 <div className="flex flex-col gap-6">
                     <h1 className="text-4xl md:text-6xl font-semibold">
                         {t("footer.tagline")}
                     </h1>
 
-                    {/* Navigasi mobile */}
                     <div className="flex md:hidden flex-wrap gap-4">
                         {["home", "batik", "store", "ai", "contact"].map((key) => (
                             <a
@@ -55,13 +77,11 @@ export default function Footer() {
                         ))}
                     </div>
 
-                    {/* Copyright (desktop) */}
                     <p className="text-xs text-[#595A5B] hidden md:flex">
                         &copy; {currentYear} Batikan. {t("footer.rights")}
                     </p>
                 </div>
 
-                {/* Kanan: kontak dan sosial media */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-sm">
                     <div className="flex flex-col gap-2 text-lg">
                         <h2 className="text-[#595A5B] font-semibold">{t("footer.location")}</h2>
@@ -96,10 +116,14 @@ export default function Footer() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </motion.div>
 
-            {/* Branding dan scroll-to-top */}
-            <div className="container mx-auto px-4 md:px-0">
+            <motion.div
+                className="container mx-auto px-4 md:px-0"
+                variants={fadeUp}
+                initial="hidden"
+                animate={isInView ? "show" : "hidden"}
+            >
                 <div className="flex justify-center items-center">
                     <h1 className="text-white text-[100px] md:text-[350px] mb-8 font-semibold leading-none text-center">
                         Batikan
@@ -117,9 +141,8 @@ export default function Footer() {
                         <ArrowUp className="w-4 h-4" />
                     </div>
                 </button>
-            </div>
+            </motion.div>
 
-            {/* Copyright mobile */}
             <p className="text-xs text-center text-[#595A5B] md:hidden mt-4">
                 &copy; {currentYear} Batikan. {t("footer.rights")}
             </p>

@@ -1,6 +1,8 @@
-import { useState } from "react";
+/* eslint-disable no-unused-vars */
+import { useState, useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { ArrowRight } from "lucide-react";
+import { motion, useInView } from "framer-motion";
 
 export default function Contact() {
     const { t } = useTranslation();
@@ -12,12 +14,10 @@ export default function Contact() {
         pesan: "",
     });
 
-    // Handle perubahan input form
     const handleChange = (e) => {
         setForm({ ...form, [e.target.name]: e.target.value });
     };
 
-    // Handle pengiriman melalui WhatsApp
     const handleKirim = () => {
         const intro = t("contact.whatsapp.intro");
         const labelNama = t("contact.whatsapp.name");
@@ -30,10 +30,26 @@ export default function Contact() {
         window.open(url, "_blank");
     };
 
+    const sectionRef = useRef(null);
+    const isInView = useInView(sectionRef, { once: true, amount: 0.2 });
+
+    const fadeUp = {
+        hidden: { opacity: 0, y: 30 },
+        show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+    };
+
     return (
-        <section className="container mx-auto px-6 md:px-0 py-12 flex flex-col md:flex-row items-center gap-16">
+        <section
+            ref={sectionRef}
+            className="container mx-auto px-6 md:px-0 py-12 flex flex-col md:flex-row items-center gap-16"
+        >
             {/* Form Kontak */}
-            <div className="md:w-1/2 w-full gap-4 order-2 md:order-1">
+            <motion.div
+                className="md:w-1/2 w-full gap-4 order-2 md:order-1"
+                variants={fadeUp}
+                initial="hidden"
+                animate={isInView ? "show" : "hidden"}
+            >
                 <h2 className="text-7xl font-bold mb-4">{t("contact.title")}</h2>
                 <p className="text-gray-600 mb-8 max-w-md">{t("contact.description")}</p>
 
@@ -81,16 +97,21 @@ export default function Contact() {
                         </span>
                     </button>
                 </div>
-            </div>
+            </motion.div>
 
             {/* Gambar */}
-            <div className="flex w-full md:w-1/2 md:order-2 order-1">
+            <motion.div
+                className="flex w-full md:w-1/2 md:order-2 order-1"
+                variants={fadeUp}
+                initial="hidden"
+                animate={isInView ? "show" : "hidden"}
+            >
                 <img
                     src="/images/pengrajin.png"
                     alt="Pengrajin Batik"
                     className="rounded-xl max-h-screen w-full h-auto aspect-1/1 md:aspect-auto object-cover"
                 />
-            </div>
+            </motion.div>
         </section>
     );
 }

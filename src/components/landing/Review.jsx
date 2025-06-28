@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { useState, useRef } from "react";
+import { motion, AnimatePresence, useInView } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useTranslation, Trans } from "react-i18next";
 
@@ -8,15 +8,10 @@ export default function Review() {
     const { t } = useTranslation();
     const [current, setCurrent] = useState(0);
 
-    // Ambil data review dari translation JSON
     const reviews = t("review.reviews", { returnObjects: true });
+    const previewItems = [...reviews.slice(current + 1), ...reviews.slice(0, current)];
 
-    // Ambil review setelah index saat ini untuk tampilan thumbnail
-    const previewItems = [
-        ...reviews.slice(current + 1),
-        ...reviews.slice(0, current),
-    ];
-
+    // Untuk geser review
     const handlePrev = () => {
         setCurrent((prev) => (prev === 0 ? reviews.length - 1 : prev - 1));
     };
@@ -25,8 +20,23 @@ export default function Review() {
         setCurrent((prev) => (prev === reviews.length - 1 ? 0 : prev + 1));
     };
 
+    // Untuk animasi masuk section ke viewport
+    const sectionRef = useRef(null);
+    const isInView = useInView(sectionRef, { once: true, amount: 0.3 });
+
+    const fadeUp = {
+        hidden: { opacity: 0, y: 30 },
+        show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+    };
+
     return (
-        <section className="relative w-full bg-card py-[80px] overflow-hidden">
+        <motion.section
+            ref={sectionRef}
+            initial="hidden"
+            animate={isInView ? "show" : "hidden"}
+            variants={fadeUp}
+            className="relative w-full bg-card py-[80px] overflow-hidden"
+        >
             <div className="container mx-auto px-6 md:px-0">
                 {/* Header dan tombol navigasi */}
                 <div className="flex items-center justify-between mb-10">
@@ -100,6 +110,9 @@ export default function Review() {
                         >
                             {previewItems.map((review, idx) => (
                                 <motion.div
+                                    layout
+                                    whileHover={{ scale: 1.05 }}
+                                    transition={{ type: "spring", stiffness: 300 }}
                                     key={review.name}
                                     onClick={() =>
                                         setCurrent((current + 1 + idx) % reviews.length)
@@ -117,6 +130,6 @@ export default function Review() {
                     </AnimatePresence>
                 </div>
             </div>
-        </section>
+        </motion.section>
     );
 }

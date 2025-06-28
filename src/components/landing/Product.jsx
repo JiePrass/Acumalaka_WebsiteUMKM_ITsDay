@@ -1,5 +1,7 @@
-import { useState } from "react";
+/* eslint-disable no-unused-vars */
+import { useState, useRef } from "react";
 import { useTranslation } from "react-i18next";
+import { motion, useInView } from "framer-motion";
 import ProductCard from "../shared/ProductCard";
 import FilterTabs from "../shared/FilterTabs";
 
@@ -61,34 +63,71 @@ export default function Product() {
     const [hovered, setHovered] = useState(null);
     const [filter, setFilter] = useState("all");
 
-    // Filter produk berdasarkan kategori yang dipilih
+    const ref = useRef(null);
+    const isInView = useInView(ref, { once: true, amount: 0.3 });
+
+    const fadeUp = {
+        hidden: { opacity: 0, y: 30 },
+        show: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
+    };
+
     const filteredProducts =
         filter === "all"
             ? allProducts
             : allProducts.filter((p) => p.category === filter);
 
     return (
-        <section className="container mx-auto px-6 md:px-0">
+        <section ref={ref} className="container mx-auto px-6 md:px-0">
             {/* Judul Section */}
-            <h1 className="text-2xl md:text-5xl font-semibold mb-4 font-narrow">
+            <motion.h1
+                variants={fadeUp}
+                initial="hidden"
+                animate={isInView ? "show" : "hidden"}
+                className="text-2xl md:text-5xl font-semibold mb-4 font-narrow"
+            >
                 {t("product.title")}
-            </h1>
+            </motion.h1>
 
             {/* Tab filter kategori */}
-            <FilterTabs active={filter} onChange={setFilter} />
+            <motion.div
+                variants={fadeUp}
+                initial="hidden"
+                animate={isInView ? "show" : "hidden"}
+                transition={{ delay: 0.2 }}
+            >
+                <FilterTabs active={filter} onChange={setFilter} />
+            </motion.div>
 
             {/* Grid produk */}
-            <div className="grid grid-cols-6 gap-6 md:grid-cols-12 md:gap-12">
+            <motion.div
+                className="grid grid-cols-6 gap-6 md:grid-cols-12 md:gap-12 mt-6"
+                initial="hidden"
+                animate={isInView ? "show" : "hidden"}
+                variants={{
+                    hidden: {},
+                    show: {
+                        transition: {
+                            staggerChildren: 0.1,
+                            delayChildren: 0.4,
+                        },
+                    },
+                }}
+            >
                 {filteredProducts.map((product) => (
-                    <ProductCard
+                    <motion.div
                         key={product.id}
-                        product={product}
-                        isHovered={hovered === product.id}
-                        onHover={() => setHovered(product.id)}
-                        onLeave={() => setHovered(null)}
-                    />
+                        variants={fadeUp}
+                        className="col-span-3 md:col-span-4"
+                    >
+                        <ProductCard
+                            product={product}
+                            isHovered={hovered === product.id}
+                            onHover={() => setHovered(product.id)}
+                            onLeave={() => setHovered(null)}
+                        />
+                    </motion.div>
                 ))}
-            </div>
+            </motion.div>
         </section>
     );
 }
