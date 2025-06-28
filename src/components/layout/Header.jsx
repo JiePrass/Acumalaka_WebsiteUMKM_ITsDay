@@ -43,7 +43,7 @@ export default function Header() {
             {/* Main Nav */}
             <div className="container mx-auto py-3 px-6 md:px-0 flex justify-between items-center">
                 <div className="flex items-center gap-2">
-                    <img src="images/batikan-logo.png" alt="Logo" className="object-contain w-8 h-8"/>
+                    <img src="images/batikan-logo.png" alt="Logo" className="object-contain w-6 h-6"/>
                     <span className="font-bold text-primary text-2xl">Batikan.</span>
                 </div>
 

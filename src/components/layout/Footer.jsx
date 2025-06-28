@@ -13,10 +13,7 @@ export default function Footer() {
         <footer className="bg-neutral-900 text-white py-8">
             {/* Navigation */}
             <div className="container mx-auto flex flex-col md:flex-row md:justify-between md:items-center gap-6 md:gap-0 px-6 md:px-0">
-                <div className="flex items-center gap-2">
-                    <img src="images/batikan-logo-white.png" alt="Logo" className="object-contain w-8 h-8"/>
-                    <span className="text-3xl font-bold">Batikan.</span>
-                </div>
+                <img src="images/itsday.png" alt="Logo" className="object-contain w-18 h-auto" />
                 <div className="md:flex gap-4 hidden flex-wrap">
                     <a href="/#" className="px-4 py-1 border rounded-full whitespace-nowrap hover:bg-white hover:text-black transition-colors ">{t('nav.home')}</a>
                     <a href="/#" className="px-4 py-1 border rounded-full whitespace-nowrap hover:bg-white hover:text-black transition-colors ">{t('nav.batik')}</a>

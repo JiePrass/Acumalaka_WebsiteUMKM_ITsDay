@@ -19,7 +19,7 @@ export default function Review() {
     }
 
     return (
-        <section className="relative w-full bg-[#EAEAEA] pt-12 pb-18 overflow-hidden">
+        <section className="relative w-full bg-card py-[80px] overflow-hidden">
             <div className="container mx-auto px-6 md:px-0">
                 <div className="justify-between flex items-center mb-10">
                     <div className="flex gap-4 z-10 p-4">
@@ -30,7 +30,7 @@ export default function Review() {
                             <ChevronRight size={24} />
                         </button>
                     </div>
-                    <h2 className='text-end text-xl md:text-3xl font-medium leading-snug'>
+                    <h2 className='text-end text-xl md:text-3xl font-bold leading-snug'>
                         {t("review.title")}<br />
                         <Trans i18nKey="review.title2" components={{
                             highlight: <span className="text-primary" />,
@@ -39,7 +39,7 @@ export default function Review() {
                 </div>
 
                 <div className="relative flex flex-col md:flex-row items-start gap-8">
-                    <div className="flex-1 w-full md:max-w-80 relative z-10">
+                    <div className="flex-1 w-full md:max-w-98 relative z-10">
                         <AnimatePresence mode="wait">
                             <motion.div
                                 key={current}
@@ -47,7 +47,7 @@ export default function Review() {
                                 animate={{ opacity: 1, x: 0 }}
                                 exit={{ opacity: 0, x: -50 }}
                                 transition={{ duration: 0.4 }}
-                                className="rounded-xl w-full md:w-80 h-80 overflow-hidden shadow-md"
+                                className="rounded-xl w-full md:w-92 h-92 overflow-hidden shadow-md"
                             >
                                 <img
                                     src={reviews[current].image}
@@ -58,9 +58,9 @@ export default function Review() {
                         </AnimatePresence>
                     </div>
 
-                    <div className="flex-1 max-w-sm flex flex-col gap-2 justify-center z-10 h-80">
-                        <Quote className="w-8 h-8 mb-4 text-black" />
-                        <p className="text-2xl font-semibold text-black leading-relaxed">
+                    <div className="flex-1 max-w-sm flex flex-col gap-2 justify-center z-10">
+                        <img src="icons/quotes.svg" alt="Quote Icons" className="w-12 h-12 text-black" />
+                        <p className="text-2xl md:text-3xl font-bold text-black leading-relaxed">
                             {reviews[current].text}
                         </p>
                         <div className="mt-6 text-sm text-gray-600">

@@ -8,14 +8,14 @@
     --color-accent: #EAEAEA;
     --color-background: #F7F7F7;
 
-    --color-card: #E1E0DE;
+    --color-card: #EAEAEA;
 }
 
 @layer base {
     html {
         font-family: var(--font-display);
         background-color: var(--color-background);
-        color: #000000;
+        color: #262525;
         /* opsional */
     }
 }
