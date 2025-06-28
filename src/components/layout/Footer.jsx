@@ -42,10 +42,10 @@ export default function Footer() {
                 />
 
                 <div className="hidden md:flex gap-4 flex-wrap">
-                    {["home", "batik", "store", "ai", "contact"].map((key) => (
+                    {["home", "batik", "ai", "contact", "profile"].map((key) => (
                         <a
                             key={key}
-                            href="/#"
+                            href={`#${key}`}
                             className="px-4 py-1 border rounded-full whitespace-nowrap hover:bg-white hover:text-black transition-colors"
                         >
                             {t(`nav.${key}`)}
@@ -66,7 +66,7 @@ export default function Footer() {
                     </h1>
 
                     <div className="flex md:hidden flex-wrap gap-4">
-                        {["home", "batik", "store", "ai", "contact"].map((key) => (
+                        {["home", "batik", "ai", "contact", "profile"].map((key) => (
                             <a
                                 key={key}
                                 href="/#"
