@@ -1,10 +1,11 @@
+/* eslint-disable no-unused-vars */
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { ChevronDown, ChevronUp, ChevronRight } from 'lucide-react'
 import Flag from 'react-world-flags'
-// eslint-disable-next-line no-unused-vars
 import { motion, AnimatePresence } from 'framer-motion'
 
+// Daftar bahasa yang tersedia
 const languages = [
     { code: 'id', label: 'Bahasa Indonesia', iso: 'ID' },
     { code: 'en', label: 'English', iso: 'US' },
@@ -18,13 +19,14 @@ const languages = [
     { code: 'jp', label: '日本語 (Japanese)', iso: 'JP' }
 ];
 
-
 export default function LanguageSelector() {
-    const { i18n } = useTranslation()
+    const { i18n, t } = useTranslation()
     const [isOpen, setIsOpen] = useState(false)
-    const { t } = useTranslation();
 
+    // Fungsi untuk toggle dropdown
     const toggleDropdown = () => setIsOpen(!isOpen)
+
+    // Fungsi untuk mengganti bahasa
     const selectLanguage = (code) => {
         i18n.changeLanguage(code)
         setIsOpen(false)
@@ -34,7 +36,7 @@ export default function LanguageSelector() {
 
     return (
         <div className="relative">
-            {/* Desktop */}
+            {/* Tampilan Desktop */}
             <div className="hidden md:block">
                 <button
                     onClick={toggleDropdown}
@@ -70,7 +72,7 @@ export default function LanguageSelector() {
                 </AnimatePresence>
             </div>
 
-            {/* Mobile */}
+            {/* Tampilan Mobile */}
             <div className="block md:hidden">
                 <button
                     onClick={toggleDropdown}

@@ -12,10 +12,12 @@ export default function Contact() {
         pesan: "",
     });
 
+    // Handle perubahan input form
     const handleChange = (e) => {
         setForm({ ...form, [e.target.name]: e.target.value });
     };
 
+    // Handle pengiriman melalui WhatsApp
     const handleKirim = () => {
         const intro = t("contact.whatsapp.intro");
         const labelNama = t("contact.whatsapp.name");
@@ -30,9 +32,11 @@ export default function Contact() {
 
     return (
         <section className="container mx-auto px-6 md:px-0 py-12 flex flex-col md:flex-row items-center gap-16">
+            {/* Form Kontak */}
             <div className="md:w-1/2 w-full gap-4 order-2 md:order-1">
                 <h2 className="text-7xl font-bold mb-4">{t("contact.title")}</h2>
                 <p className="text-gray-600 mb-8 max-w-md">{t("contact.description")}</p>
+
                 <div className="flex flex-col gap-4">
                     <input
                         type="text"
@@ -66,6 +70,7 @@ export default function Contact() {
                         onChange={handleChange}
                         className="border-b border-gray-300 focus:outline-none py-2 mb-4 resize-none"
                     />
+
                     <button
                         onClick={handleKirim}
                         className="bg-card text-black px-6 py-3 rounded-full w-max font-semibold flex items-center gap-2 hover:bg-gray-200 transition"
@@ -78,6 +83,7 @@ export default function Contact() {
                 </div>
             </div>
 
+            {/* Gambar */}
             <div className="flex w-full md:w-1/2 md:order-2 order-1">
                 <img
                     src="/images/pengrajin.png"

@@ -4,11 +4,14 @@ export default function Delivery() {
     const { t } = useTranslation();
 
     return (
-        <section className="mx-auto container px-6 md:px-0 flex justify-center items-center gap-8 md:gap-16 flex-col py-8">
-            <h1 className="text-3xl md:text-5xl max-w-4xl font-semibold font-narrow text-center leading-snug">
-                <h2 className="text-black">{t("delivery.titleStart")} <span className="text-gray-500">{t("delivery.titleEnd")}</span></h2>
-            </h1>
+        <section className="mx-auto container px-6 md:px-0 py-8 flex flex-col items-center gap-8 md:gap-16">
+            {/* Judul utama section pengiriman */}
+            <h2 className="text-3xl md:text-5xl max-w-4xl font-semibold font-narrow text-center leading-snug text-black">
+                {t("delivery.titleStart")}{" "}
+                <span className="text-gray-500">{t("delivery.titleEnd")}</span>
+            </h2>
 
+            {/* Logo layanan pengiriman */}
             <div className="flex flex-wrap justify-center items-center gap-8 md:gap-14">
                 <img src="/icons/jnt.png" alt="J&T" className="h-6 md:h-8" />
                 <img src="/icons/jne.png" alt="JNE" className="h-8 md:h-12" />

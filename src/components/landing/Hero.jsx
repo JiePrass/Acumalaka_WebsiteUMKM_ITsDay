@@ -1,23 +1,27 @@
-import { ArrowRight } from "lucide-react"
-import { useTranslation, Trans } from "react-i18next"
+import { ArrowRight } from "lucide-react";
+import { useTranslation, Trans } from "react-i18next";
 
 export default function Hero() {
-    const { t } = useTranslation()
+    const { t } = useTranslation();
 
     return (
         <section className="container mx-auto py-8 px-6 md:px-0">
             <div className="grid grid-cols-1 md:grid-cols-12 md:grid-rows-12 gap-4">
+                {/* Gambar utama dengan badge dan CTA */}
                 <div className="relative md:col-span-6 md:row-span-12 rounded-xl overflow-hidden">
                     <img
                         src="images/batikan-hero.png"
                         alt="Batik Jawa Barat"
                         className="w-full h-full object-cover"
                     />
-                    <div className="absolute bg-black/20 inset-0" />
+                    <div className="absolute inset-0 bg-black/20" />
                     <span className="absolute top-4 md:top-8 left-6 md:left-12 border border-white text-white px-4 py-1 rounded-full font-semibold shadow">
                         {t("hero.badge")}
                     </span>
-                    <a href="/" className="absolute font-semibold bottom-4 md:bottom-8 right-6 md:right-12 hover:cursor-pointer bg-white px-4 py-2 rounded-full flex items-center gap-2 shadow hover:bg-gray-100 transition">
+                    <a
+                        href="/"
+                        className="absolute bottom-4 md:bottom-8 right-6 md:right-12 bg-white px-4 py-2 rounded-full font-semibold flex items-center gap-2 shadow hover:bg-gray-100 transition"
+                    >
                         {t("hero.cta")}
                         <div className="bg-black text-white p-1.5 rounded-full">
                             <ArrowRight className="w-5 h-5 -rotate-45" />
@@ -25,8 +29,9 @@ export default function Hero() {
                     </a>
                 </div>
 
+                {/* Judul & deskripsi utama */}
                 <div className="md:col-span-6 md:row-span-7 bg-card rounded-xl px-8 py-8 flex flex-col justify-center">
-                    <h1 className="md:text-[80px] text-[32px] font-extrabold leading-[1.0] font-narrow">
+                    <h1 className="text-[32px] md:text-[80px] font-extrabold leading-[1.0] font-narrow">
                         {t("hero.titleLine1")}<br />
                         {t("hero.titleLine2")}<br />
                         <Trans
@@ -41,6 +46,7 @@ export default function Hero() {
                     </p>
                 </div>
 
+                {/* Gambar hashtag 1 */}
                 <div className="relative md:col-span-3 md:row-span-5 rounded-xl overflow-hidden">
                     <img
                         src="images/batik-megamendung.png"
@@ -48,10 +54,13 @@ export default function Hero() {
                         className="w-full h-full object-cover"
                     />
                     <div className="absolute inset-0 bg-black/40 flex items-end p-4">
-                        <span className="text-white font-semibold text-xl">{t("hero.hashtag1")}</span>
+                        <span className="text-white font-semibold text-xl">
+                            {t("hero.hashtag1")}
+                        </span>
                     </div>
                 </div>
 
+                {/* Gambar hashtag 2 */}
                 <div className="relative md:col-span-3 md:row-span-5 rounded-xl overflow-hidden">
                     <img
                         src="images/batik-jabar.png"
@@ -59,10 +68,12 @@ export default function Hero() {
                         className="w-full h-full object-cover"
                     />
                     <div className="absolute inset-0 bg-black/40 flex items-end p-4">
-                        <span className="text-white font-semibold text-xl">{t("hero.hashtag2")}</span>
+                        <span className="text-white font-semibold text-xl">
+                            {t("hero.hashtag2")}
+                        </span>
                     </div>
                 </div>
             </div>
         </section>
-    )
+    );
 }

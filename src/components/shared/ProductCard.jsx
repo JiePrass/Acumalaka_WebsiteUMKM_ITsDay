@@ -1,23 +1,25 @@
-import { useTranslation } from "react-i18next";
-// eslint-disable-next-line no-unused-vars
-import { motion, AnimatePresence } from "framer-motion";
+/* eslint-disable no-unused-vars */
+import { useTranslation } from "react-i18next"
+import { motion, AnimatePresence } from "framer-motion"
 
 export default function ProductCard({ product, isHovered, onHover, onLeave }) {
-    const { t } = useTranslation();
+    const { t } = useTranslation()
 
     return (
         <div className="relative col-span-3 md:col-span-4 rounded-xl transition">
+            {/* Label Produk */}
             {product.label && (
-                <span className="absolute top-2 md:top-4 font-medium left-2 md:left-4 z-10 bg-white text-black text-xs md:text-sm px-2.5 py-1 md:px-4 md:py-2 rounded-full">
+                <span className="absolute top-2 md:top-4 left-2 md:left-4 z-10 bg-white text-black text-xs md:text-sm px-2.5 py-1 md:px-4 md:py-2 rounded-full font-medium">
                     {t(`product.label.${product.label}`)}
                 </span>
             )}
             {product.discount && (
-                <span className="absolute top-2 md:top-4 font-medium left-2 md:left-4 z-10 bg-white text-black text-xs md:text-sm px-2.5 py-1 md:px-4 md:py-2 rounded-full">
+                <span className="absolute top-2 md:top-4 left-2 md:left-4 z-10 bg-white text-black text-xs md:text-sm px-2.5 py-1 md:px-4 md:py-2 rounded-full font-medium">
                     {t("product.discount")}
                 </span>
             )}
 
+            {/* Gambar Produk dan Tombol Aksi Saat Hover */}
             <div
                 className="relative flex justify-center bg-card rounded-xl"
                 onMouseEnter={onHover}
@@ -49,6 +51,7 @@ export default function ProductCard({ product, isHovered, onHover, onLeave }) {
                 </AnimatePresence>
             </div>
 
+            {/* Informasi Produk */}
             <div className="mt-3 flex flex-col w-full">
                 <h2 className="md:text-lg font-semibold">{product.title}</h2>
                 <p className="md:text-lg font-semibold text-primary">
@@ -56,5 +59,5 @@ export default function ProductCard({ product, isHovered, onHover, onLeave }) {
                 </p>
             </div>
         </div>
-    );
+    )
 }

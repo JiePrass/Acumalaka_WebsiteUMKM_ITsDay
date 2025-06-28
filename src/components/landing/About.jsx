@@ -20,18 +20,21 @@ export default function About() {
                     />
                 </h2>
 
-                <div className="flex gap-3">
+                <div className="flex gap-3 items-center">
                     <div className="flex -space-x-3">
-                        {["/images/profile.png", "/images/profile2.png", "/images/profile3.png", "/images/profile4.png"].map(
-                            (img, index) => (
-                                <img
-                                    key={index}
-                                    src={img}
-                                    alt={`User ${index + 1}`}
-                                    className="w-10 h-10 rounded-full border-2 border-white object-cover shadow"
-                                />
-                            )
-                        )}
+                        {[
+                            "/images/profile.png",
+                            "/images/profile2.png",
+                            "/images/profile3.png",
+                            "/images/profile4.png",
+                        ].map((img, index) => (
+                            <img
+                                key={index}
+                                src={img}
+                                alt={`User ${index + 1}`}
+                                className="w-10 h-10 rounded-full border-2 border-white object-cover shadow"
+                            />
+                        ))}
                     </div>
 
                     <p className="text-sm hidden md:inline text-gray-500 max-w-md sm:ml-3 mt-2 sm:mt-0">

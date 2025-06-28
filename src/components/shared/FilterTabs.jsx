@@ -2,6 +2,8 @@ import { useTranslation } from "react-i18next";
 
 export default function FilterTabs({ active, onChange }) {
     const { t } = useTranslation();
+
+    // Daftar kategori filter produk
     const tabs = [
         { key: "all", label: t("product.filter.all") },
         { key: "best_seller", label: t("product.filter.best_seller") },
@@ -14,9 +16,11 @@ export default function FilterTabs({ active, onChange }) {
             {tabs.map((tab) => (
                 <button
                     key={tab.key}
-                    className={`px-4 py-1.5 border rounded-full transition ${active === tab.key ? "bg-black text-white" : "hover:bg-black hover:text-white"
-                        }`}
                     onClick={() => onChange(tab.key)}
+                    className={`px-4 py-1.5 border rounded-full transition ${active === tab.key
+                        ? "bg-black text-white"
+                        : "hover:bg-black hover:text-white"
+                        }`}
                 >
                     {tab.label}
                 </button>

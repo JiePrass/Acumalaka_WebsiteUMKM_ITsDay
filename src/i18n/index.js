@@ -2,6 +2,7 @@ import i18n from 'i18next'
 import { initReactI18next } from 'react-i18next'
 import LanguageDetector from 'i18next-browser-languagedetector'
 
+// Impor semua file terjemahan
 import id from './locales/id/translation.json'
 import en from './locales/en/translation.json'
 import zh from './locales/zh/translation.json'
@@ -13,24 +14,31 @@ import ar from './locales/ar/translation.json'
 import ph from './locales/ph/translation.json'
 import jp from './locales/jp/translation.json'
 
-i18n.use(LanguageDetector).use(initReactI18next).init({
+// Inisialisasi i18next
+i18n
+// Deteksi bahasa dari browser
+.use(LanguageDetector)
+// Integrasi dengan React
+.use(initReactI18next)
+// Konfigurasi utama
+.init({
     resources: {
-    en: { translation: en },
-    id: { translation: id },
-    zh: { translation: zh },
-    es: { translation: es },
-    ko: { translation: ko },
-    de: { translation: de },
-    fr: { translation: fr },
-    ar: { translation: ar },
-    ph: { translation: ph },
-    jp: { translation: jp }
+        id: { translation: id },
+        en: { translation: en },
+        zh: { translation: zh },
+        es: { translation: es },
+        ko: { translation: ko },
+        de: { translation: de },
+        fr: { translation: fr },
+        ar: { translation: ar },
+        ph: { translation: ph },
+        jp: { translation: jp }
     },
-    lng: 'id',
-    fallbackLng: 'id',
-    debug: false,
+    lng: 'id', // Bahasa default
+    fallbackLng: 'id', // Bahasa fallback jika tidak ditemukan
+
     interpolation: {
-        escapeValue: false
+      escapeValue: false // React sudah aman dari XSS
     }
 })
 

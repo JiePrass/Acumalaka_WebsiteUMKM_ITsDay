@@ -1,15 +1,25 @@
-import { useState } from "react"
-// eslint-disable-next-line no-unused-vars
-import { motion, AnimatePresence } from "framer-motion"
-import { Menu, X, Search, CircleUserRound, Heart, ShoppingCart, MapPin, ChevronRight } from "lucide-react"
-import LanguageSelector from "../shared/LanguageSelector"
-import { useTranslation, Trans } from "react-i18next"
+/* eslint-disable no-unused-vars */
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import {
+    Menu,
+    X,
+    Search,
+    CircleUserRound,
+    Heart,
+    ShoppingCart,
+    MapPin,
+    ChevronRight,
+} from "lucide-react";
+import { useTranslation, Trans } from "react-i18next";
+import LanguageSelector from "../shared/LanguageSelector";
 
 export default function Header() {
-    const { t } = useTranslation()
-    const [isOpen, setIsOpen] = useState(false)
-    const toggleMenu = () => setIsOpen(!isOpen)
+    const { t } = useTranslation();
+    const [isOpen, setIsOpen] = useState(false);
+    const toggleMenu = () => setIsOpen(!isOpen);
 
+    
     const nav = [
         { key: "home", href: "#" },
         { key: "batik", href: "#" },
@@ -17,14 +27,14 @@ export default function Header() {
         { key: "ai", href: "#" },
         { key: "contact", href: "#" },
         { key: "cart", href: "#" },
-        { key: "profile", href: "#" }
-    ]
+        { key: "profile", href: "#" },
+    ];
 
     return (
         <header className="md:border-b pt-4 md:pt-0">
-            {/* Top Bar */}
+            {/* Bar atas khusus desktop */}
             <div className="border-b hidden md:block">
-                <div className="flex justify-between items-center text-sm py-2 container mx-auto text-gray-600 relative">
+                <div className="flex justify-between items-center text-sm py-2 container mx-auto text-gray-600">
                     <div className="flex items-center gap-2">
                         <MapPin className="w-4 h-4" />
                         <span>{t("nav.location")}</span>
@@ -40,40 +50,49 @@ export default function Header() {
                 </div>
             </div>
 
-            {/* Main Nav */}
+            {/* Navigasi utama */}
             <div className="container mx-auto py-3 px-6 md:px-0 flex justify-between items-center">
+                {/* Logo */}
                 <div className="flex items-center gap-2">
-                    <img src="images/batikan-logo.png" alt="Logo" className="object-contain w-6 h-6"/>
+                    <img
+                        src="images/batikan-logo.png"
+                        alt="Logo"
+                        className="object-contain w-6 h-6"
+                    />
                     <span className="font-bold text-primary text-2xl">Batikan.</span>
                 </div>
 
+                {/* Navigasi desktop */}
                 <nav className="hidden md:flex items-center gap-6 text-lg font-medium text-gray-700">
-                    <a href="#" className="text-primary">{t("nav.home")}</a>
+                    <a href="#" className="text-primary">
+                        {t("nav.home")}
+                    </a>
                     <a href="#">{t("nav.batik")}</a>
                     <a href="#">{t("nav.store")}</a>
                     <a href="#">{t("nav.ai")}</a>
                     <a href="#">{t("nav.contact")}</a>
                 </nav>
 
-                {/* Mobile Menu Button */}
+                {/* Tombol menu mobile */}
                 <div className="md:hidden">
                     <button onClick={toggleMenu}>
                         <Menu className="w-6 h-6" />
                     </button>
                 </div>
 
-                <div className="hidden md:flex items-center gap-4 text-gray-700 relative">
+                {/* Ikon di kanan atas (khusus desktop) */}
+                <div className="hidden md:flex items-center gap-4 text-gray-700">
                     <Search className="w-6 h-6 cursor-pointer" />
                     <CircleUserRound className="w-6 h-6 cursor-pointer" />
                     <Heart className="w-6 h-6 cursor-pointer" />
                     <div className="relative">
                         <ShoppingCart className="w-6 h-6 cursor-pointer" />
-                        <span className="absolute -top-1 -right-1 bg-red-600 rounded-full w-2 h-2"></span>
+                        <span className="absolute -top-1 -right-1 bg-red-600 rounded-full w-2 h-2" />
                     </div>
                 </div>
             </div>
 
-            {/* Mobile Sidebar */}
+            {/* Sidebar Mobile */}
             <AnimatePresence>
                 {isOpen && (
                     <>
@@ -86,7 +105,7 @@ export default function Header() {
                             onClick={toggleMenu}
                         />
 
-                        {/* Sidebar */}
+                        {/* Sidebar kanan */}
                         <motion.aside
                             initial={{ x: "100%" }}
                             animate={{ x: 0 }}
@@ -95,7 +114,7 @@ export default function Header() {
                             className="fixed inset-y-0 right-0 w-72 bg-neutral-900 space-y-8 text-white z-50 shadow-lg p-6 flex flex-col justify-between"
                         >
                             <div>
-                                {/* Header & Close Button */}
+                                {/* Header sidebar */}
                                 <div className="flex justify-between items-center mb-6">
                                     <span className="text-xl font-semibold">Menu</span>
                                     <button onClick={toggleMenu}>
@@ -103,7 +122,7 @@ export default function Header() {
                                     </button>
                                 </div>
 
-                                {/* Search Bar */}
+                                {/* Search */}
                                 <div className="mb-4 relative">
                                     <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
                                     <input
@@ -113,7 +132,7 @@ export default function Header() {
                                     />
                                 </div>
 
-                                {/* Navigation Links */}
+                                {/* Navigasi mobile */}
                                 <nav className="flex flex-col gap-4">
                                     {nav.map((item) => (
                                         <a
@@ -125,27 +144,58 @@ export default function Header() {
                                             <ChevronRight className="w-6 h-6 text-gray-400" />
                                         </a>
                                     ))}
-
-                                    {/* Language Selector tetap ditaruh di bawah */}
                                     <LanguageSelector />
                                 </nav>
 
-
-                                {/* Social Media */}
+                                {/* Media sosial */}
                                 <div className="flex flex-col gap-2 text-lg mt-6">
-                                    <h2 className="text-[#595A5B] font-semibold">{t('footer.social')}</h2>
+                                    <h2 className="text-[#595A5B] font-semibold">
+                                        {t("footer.social")}
+                                    </h2>
                                     <div className="flex gap-4">
-                                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-                                            <img src="/icons/facebook.svg" alt="Facebook" className="w-8 h-8 hover:opacity-80 transition" />
+                                        <a
+                                            href="https://facebook.com"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            <img
+                                                src="/icons/facebook.svg"
+                                                alt="Facebook"
+                                                className="w-8 h-8 hover:opacity-80 transition"
+                                            />
                                         </a>
-                                        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
-                                            <img src="/icons/youtube.svg" alt="Youtube" className="w-8 h-8 hover:opacity-80 transition" />
+                                        <a
+                                            href="https://youtube.com"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            <img
+                                                src="/icons/youtube.svg"
+                                                alt="Youtube"
+                                                className="w-8 h-8 hover:opacity-80 transition"
+                                            />
                                         </a>
-                                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-                                            <img src="/icons/instagram.svg" alt="Instagram" className="w-8 h-8 hover:opacity-80 transition" />
+                                        <a
+                                            href="https://instagram.com"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            <img
+                                                src="/icons/instagram.svg"
+                                                alt="Instagram"
+                                                className="w-8 h-8 hover:opacity-80 transition"
+                                            />
                                         </a>
-                                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-                                            <img src="/icons/twitter.svg" alt="Twitter" className="w-8 h-8 hover:opacity-80 transition" />
+                                        <a
+                                            href="https://twitter.com"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            <img
+                                                src="/icons/twitter.svg"
+                                                alt="Twitter"
+                                                className="w-8 h-8 hover:opacity-80 transition"
+                                            />
                                         </a>
                                     </div>
                                 </div>
@@ -154,7 +204,6 @@ export default function Header() {
                     </>
                 )}
             </AnimatePresence>
-
         </header>
-    )
+    );
 }
