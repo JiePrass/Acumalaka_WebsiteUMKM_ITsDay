@@ -77,7 +77,7 @@ export default function Product() {
             : allProducts.filter((p) => p.category === filter);
 
     return (
-        <section ref={ref} className="container mx-auto px-6 md:px-0">
+        <section ref={ref} className="container mx-auto px-6 md:px-0" id="product">
             {/* Judul Section */}
             <motion.h1
                 variants={fadeUp}

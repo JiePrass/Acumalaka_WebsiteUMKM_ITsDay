@@ -48,10 +48,9 @@ export default function Header() {
 
     const nav = [
         { key: "home", href: "#" },
-        { key: "batik", href: "#" },
-        { key: "store", href: "#" },
-        { key: "ai", href: "#" },
-        { key: "contact", href: "#" },
+        { key: "batik", href: "#product" },
+        { key: "ai", href: "#batikan-ai" },
+        { key: "contact", href: "#contact" },
         { key: "cart", href: "#" },
         { key: "profile", href: "#" },
     ];
@@ -101,7 +100,7 @@ export default function Header() {
                     variants={fadeDown}
                     className="hidden md:flex items-center gap-6 text-lg font-medium text-gray-700"
                 >
-                    {nav.slice(0, 5).map((item) => (
+                    {nav.slice(0, 4).map((item) => (
                         <a
                             key={item.key}
                             href={item.href}

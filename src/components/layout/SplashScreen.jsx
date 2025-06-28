@@ -36,7 +36,6 @@ export default function SplashScreen() {
     );
 }
 
-// Logo bergerak sedikit ke kiri (hanya -40px)
 const containerVariants = {
     initial: { x: 140 },
     animate: {

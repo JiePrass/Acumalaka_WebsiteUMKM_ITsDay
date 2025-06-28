@@ -42,6 +42,7 @@ export default function Contact() {
         <section
             ref={sectionRef}
             className="container mx-auto px-6 md:px-0 py-12 flex flex-col md:flex-row items-center gap-16"
+            id="contact"
         >
             {/* Form Kontak */}
             <motion.div

@@ -70,7 +70,7 @@ export default function BatikanAI() {
     ];
 
     return (
-        <section ref={sectionRef} className="bg-card overflow-hidden">
+        <section ref={sectionRef} className="bg-card overflow-hidden" id="batikan-ai">
             <div className="container mx-auto flex flex-col md:flex-row gap-10 pt-8">
 
                 {/* Kolom kiri */}
