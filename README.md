@@ -1,6 +1,8 @@
 # Batikan
 
-**Batikan** adalah platform e-commerce yang dikembangkan untuk mendukung UMKM lokal dalam memperkenalkan dan memasarkan produk batik khas Indonesia secara digital dan modern. Proyek ini bertujuan mengangkat kekayaan budaya nusantara—khususnya Batik Jawa Barat—ke pasar nasional dan internasional.
+**Batikan** adalah sebuah platform e-commerce inovatif yang dirancang untuk mendukung para pelaku UMKM lokal dalam memasarkan produk batik khas Indonesia secara digital, mudah, dan modern. Melalui Batikan, pengrajin batik dari berbagai daerah. Khususnya dari Jawa Barat, diberikan ruang untuk memperkenalkan karya mereka ke pasar yang lebih luas tanpa harus bergantung pada metode penjualan konvensional.
+
+Lebih dari sekadar toko daring, Batikan hadir sebagai jembatan antara warisan budaya dan teknologi. Dengan tampilan antarmuka yang ramah pengguna dan fitur-fitur yang mendukung kebutuhan bisnis kecil, Batikan mempermudah proses transaksi sekaligus memperkuat identitas batik sebagai warisan budaya bangsa. Batikan tidak hanya menargetkan konsumen lokal, tetapi juga membuka akses ke pasar internasional, membawa semangat #BanggaBerkain dan #BatikGoesGlobal ke kancah dunia.
 
 ---
 
