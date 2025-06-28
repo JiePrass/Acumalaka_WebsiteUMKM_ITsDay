@@ -42,7 +42,10 @@ export default function Header() {
 
             {/* Main Nav */}
             <div className="container mx-auto py-3 px-6 md:px-0 flex justify-between items-center">
-                <div className="text-2xl font-bold text-primary">Batikan.</div>
+                <div className="flex items-center gap-2">
+                    <img src="images/batikan-logo.png" alt="Logo" className="object-contain w-8 h-8"/>
+                    <span className="font-bold text-primary text-2xl">Batikan.</span>
+                </div>
 
                 <nav className="hidden md:flex items-center gap-6 text-lg font-medium text-gray-700">
                     <a href="#" className="text-primary">{t("nav.home")}</a>
