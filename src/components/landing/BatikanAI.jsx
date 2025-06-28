@@ -37,7 +37,7 @@ export default function BatikanAI() {
 
     return (
         <section className="container mx-auto bg-card rounded-xl flex flex-col md:flex-row gap-10 pt-8">
-            <div className="flex flex-col gap-6 pt-12 px-12 md:w-1/3 w-full">
+            <div className="flex flex-col gap-6 pt-12 order-1 px-12 md:w-1/3 w-full">
                 <div>
                     <h1 className="text-6xl font-bold font-narrow">Batikan AI</h1>
                     <p className="text-gray-500 mt-2">
@@ -73,7 +73,7 @@ export default function BatikanAI() {
             </div>
 
             {/* TENGAH */}
-            <div className="md:w-1/3 w-full order-3 flex justify-center">
+            <div className="md:w-1/3 w-full order-3 md:order-2 flex justify-center">
                 <img
                     src={image}
                     alt="Model Batik"
@@ -82,7 +82,7 @@ export default function BatikanAI() {
             </div>
 
             {/* KANAN */}
-            <div className="md:w-1/3 z-5 pl-6 pb-6 justify-center w-full flex flex-col items-center gap-4">
+            <div className="md:w-1/3 z-5 pl-6 pb-6 order-2 md:order-3 justify-center w-full flex flex-col items-center gap-4">
                 <h2 className="text-4xl w-full text-start font-semibold">
                     {t("batikanAI.choose_motif")}
                 </h2>
