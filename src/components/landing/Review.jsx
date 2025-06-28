@@ -30,7 +30,7 @@ export default function Review() {
                             <ChevronRight size={24} />
                         </button>
                     </div>
-                    <h2 className='text-end text-xl md:text-3xl font-medium leading-snug'>
+                    <h2 className='text-end text-xl md:text-3xl font-narrow font-medium leading-snug'>
                         {t("review.title")}<br />
                         <Trans i18nKey="review.title2" components={{
                             highlight: <span className="text-primary" />,

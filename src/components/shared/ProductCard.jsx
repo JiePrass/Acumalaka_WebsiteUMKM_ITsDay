@@ -1,4 +1,6 @@
 import { useTranslation } from "react-i18next";
+// eslint-disable-next-line no-unused-vars
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function ProductCard({ product, isHovered, onHover, onLeave }) {
     const { t } = useTranslation();
@@ -26,16 +28,25 @@ export default function ProductCard({ product, isHovered, onHover, onLeave }) {
                     alt={product.title}
                     className="w-4/6 object-cover"
                 />
-                {isHovered && (
-                    <div className="absolute inset-0 z-20 flex flex-col justify-center items-center gap-2 bg-black/50 rounded-xl text-white">
-                        <button className="bg-white text-black px-2.5 py-1 md:px-4 md:py-2 rounded-full text-xs md:text-sm hover:cursor-pointer">
-                            {t("product.add_to_cart")}
-                        </button>
-                        <button className="bg-transparent border border-white px-2.5 py-1 md:px-4 md:py-2 rounded-full text-xs md:text-sm hover:bg-white hover:text-black">
-                            {t("product.buy_now")}
-                        </button>
-                    </div>
-                )}
+
+                <AnimatePresence>
+                    {isHovered && (
+                        <motion.div
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            exit={{ opacity: 0 }}
+                            transition={{ duration: 0.3 }}
+                            className="absolute inset-0 z-20 flex flex-col justify-center items-center gap-2 bg-black/50 rounded-xl text-white"
+                        >
+                            <button className="bg-white text-black px-2.5 py-1 md:px-4 md:py-2 rounded-full text-xs md:text-sm hover:cursor-pointer">
+                                {t("product.add_to_cart")}
+                            </button>
+                            <button className="bg-transparent border border-white px-2.5 py-1 md:px-4 md:py-2 rounded-full text-xs md:text-sm hover:bg-white hover:text-black">
+                                {t("product.buy_now")}
+                            </button>
+                        </motion.div>
+                    )}
+                </AnimatePresence>
             </div>
 
             <div className="mt-3 flex flex-col w-full">

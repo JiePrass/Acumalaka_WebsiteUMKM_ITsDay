@@ -63,11 +63,11 @@ export default function Header() {
                 </div>
 
                 <div className="hidden md:flex items-center gap-4 text-gray-700 relative">
-                    <Search className="w-5 h-5 cursor-pointer" />
-                    <CircleUserRound className="w-5 h-5 cursor-pointer" />
-                    <Heart className="w-5 h-5 cursor-pointer" />
+                    <Search className="w-6 h-6 cursor-pointer" />
+                    <CircleUserRound className="w-6 h-6 cursor-pointer" />
+                    <Heart className="w-6 h-6 cursor-pointer" />
                     <div className="relative">
-                        <ShoppingCart className="w-5 h-5 cursor-pointer" />
+                        <ShoppingCart className="w-6 h-6 cursor-pointer" />
                         <span className="absolute -top-1 -right-1 bg-red-600 rounded-full w-2 h-2"></span>
                     </div>
                 </div>
@@ -136,16 +136,16 @@ export default function Header() {
                                     <h2 className="text-[#595A5B] font-semibold">{t('footer.social')}</h2>
                                     <div className="flex gap-4">
                                         <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-                                            <img src="/icons/facebook.svg" alt="Facebook" className="w-6 h-6 hover:opacity-80 transition" />
+                                            <img src="/icons/facebook.svg" alt="Facebook" className="w-8 h-8 hover:opacity-80 transition" />
                                         </a>
                                         <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
-                                            <img src="/icons/youtube.svg" alt="Youtube" className="w-6 h-6 hover:opacity-80 transition" />
+                                            <img src="/icons/youtube.svg" alt="Youtube" className="w-8 h-8 hover:opacity-80 transition" />
                                         </a>
                                         <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-                                            <img src="/icons/instagram.svg" alt="Instagram" className="w-6 h-6 hover:opacity-80 transition" />
+                                            <img src="/icons/instagram.svg" alt="Instagram" className="w-8 h-8 hover:opacity-80 transition" />
                                         </a>
                                         <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-                                            <img src="/icons/twitter.svg" alt="Twitter" className="w-6 h-6 hover:opacity-80 transition" />
+                                            <img src="/icons/twitter.svg" alt="Twitter" className="w-8 h-8 hover:opacity-80 transition" />
                                         </a>
                                     </div>
                                 </div>

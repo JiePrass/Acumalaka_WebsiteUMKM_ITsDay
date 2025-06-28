@@ -39,7 +39,7 @@ export default function BatikanAI() {
         <section className="container mx-auto bg-card rounded-xl flex flex-col md:flex-row gap-10 pt-8">
             <div className="flex flex-col gap-6 pt-12 px-12 md:w-1/3 w-full">
                 <div>
-                    <h1 className="text-6xl font-bold">Batikan AI</h1>
+                    <h1 className="text-6xl font-bold font-narrow">Batikan AI</h1>
                     <p className="text-gray-500 mt-2">
                         {t("batikanAI.description")}
                     </p>

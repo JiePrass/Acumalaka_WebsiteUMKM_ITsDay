@@ -25,7 +25,7 @@ export default function Product() {
 
     return (
         <section className="container mx-auto px-6 md:px-0">
-            <h1 className="text-2xl md:text-5xl font-semibold mb-4">{t("product.title")}</h1>
+            <h1 className="text-2xl md:text-5xl font-semibold mb-4 font-narrow">{t("product.title")}</h1>
 
             <FilterTabs active={filter} onChange={setFilter} />
 

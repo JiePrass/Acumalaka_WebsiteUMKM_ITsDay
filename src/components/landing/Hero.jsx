@@ -25,16 +25,16 @@ export default function Hero() {
                     </a>
                 </div>
 
-                <div className="md:col-span-6 md:row-span-7 bg-card rounded-xl px-6 py-8 flex flex-col justify-center">
-                    <h1 className="md:text-7xl text-[32px] font-extrabold leading-snug font-narrow">
+                <div className="md:col-span-6 md:row-span-7 bg-card rounded-xl px-8 py-8 flex flex-col justify-center">
+                    <h1 className="md:text-[80px] text-[32px] font-extrabold leading-[1.0] font-narrow">
                         {t("hero.titleLine1")}<br />
                         {t("hero.titleLine2")}<br />
                         <Trans
-                        i18nKey="hero.titleLine3"
-                        components={{
-                            highlight: <span className="text-primary" />,
-                        }}
-                    />
+                            i18nKey="hero.titleLine3"
+                            components={{
+                                highlight: <span className="text-primary" />,
+                            }}
+                        />
                     </h1>
                     <p className="text-gray-600 mt-4 max-w-md">
                         {t("hero.description")}
