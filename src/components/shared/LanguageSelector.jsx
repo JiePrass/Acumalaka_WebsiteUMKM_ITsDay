@@ -14,8 +14,9 @@ const languages = [
     { code: 'de', label: 'Deutsch (German)', iso: 'DE' },
     { code: 'fr', label: 'Français (French)', iso: 'FR' },
     { code: 'ar', label: 'العربية (Arabic)', iso: 'SA' },
-    { code: 'ph', label: 'Tagalog (Filipino)', iso: 'PH' }
-]
+    { code: 'ph', label: 'Tagalog (Filipino)', iso: 'PH' },
+    { code: 'jp', label: '日本語 (Japanese)', iso: 'JP' }
+];
 
 
 export default function LanguageSelector() {

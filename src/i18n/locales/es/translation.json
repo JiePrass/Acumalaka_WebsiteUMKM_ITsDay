@@ -85,5 +85,27 @@
         "generate_button": "Generar mi estilo Batik",
         "choose_motif": "Elige tu motivo de batik",
         "select_button": "Seleccionar este motivo"
+    },
+    "contact": {
+        "title": "Contáctanos",
+        "description": "Si tienes algún problema con este sitio web, no dudes en contactarnos. Estamos disponibles las 24 horas, los 7 días de la semana.",
+        "form": {
+            "name": "Nombre completo",
+            "email": "Tu correo electrónico",
+            "subject": "¿Cuál es tu problema?",
+            "message": "Mensaje",
+            "button": "Enviar ahora"
+        },
+        "whatsapp": {
+            "intro": "Hola, me gustaría contactarte.",
+            "name": "Nombre",
+            "email": "Correo",
+            "subject": "Problema",
+            "message": "Mensaje"
+        }
+    },
+    "delivery": {
+        "titleStart": "Ofrecemos varios",
+        "titleEnd": "Envíos rápidos a todo Indonesia"
     }
 }

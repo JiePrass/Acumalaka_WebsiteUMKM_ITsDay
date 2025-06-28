@@ -11,6 +11,7 @@ import de from './locales/de/translation.json'
 import fr from './locales/fr/translation.json'
 import ar from './locales/ar/translation.json'
 import ph from './locales/ph/translation.json'
+import jp from './locales/jp/translation.json'
 
 i18n.use(LanguageDetector).use(initReactI18next).init({
     resources: {
@@ -22,7 +23,8 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
     de: { translation: de },
     fr: { translation: fr },
     ar: { translation: ar },
-    ph: { translation: ph }
+    ph: { translation: ph },
+    jp: { translation: jp }
     },
     lng: 'id',
     fallbackLng: 'id',

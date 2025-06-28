@@ -19,7 +19,7 @@ export default function Review() {
     }
 
     return (
-        <section className="relative w-full overflow-hidden">
+        <section className="relative w-full bg-card py-12 overflow-hidden">
             <div className="container mx-auto px-6 md:px-0">
                 <div className="justify-between flex items-center mb-10">
                     <div className="flex gap-4 z-10 p-4">
@@ -30,7 +30,7 @@ export default function Review() {
                             <ChevronRight size={24} />
                         </button>
                     </div>
-                    <h2 className='text-end text-xl md:text-3xl font-narrow font-medium leading-snug'>
+                    <h2 className='text-end text-xl md:text-3xl font-medium leading-snug'>
                         {t("review.title")}<br />
                         <Trans i18nKey="review.title2" components={{
                             highlight: <span className="text-primary" />,

@@ -85,5 +85,27 @@
         "generate_button": "生成我的蜡染风格",
         "choose_motif": "选择蜡染图案",
         "select_button": "选择此图案"
+    },
+    "contact": {
+        "title": "联系我们",
+        "description": "如果您在使用本网站时遇到问题，请随时联系我们。我们全天候为您服务。",
+        "form": {
+            "name": "全名",
+            "email": "您的邮箱",
+            "subject": "您遇到的问题是什么？",
+            "message": "留言",
+            "button": "立即发送"
+        },
+        "whatsapp": {
+            "intro": "您好，我想联系您。",
+            "name": "姓名",
+            "email": "邮箱",
+            "subject": "问题",
+            "message": "留言"
+        }
+    },
+    "delivery": {
+        "titleStart": "我们提供多种",
+        "titleEnd": "快速配送服务覆盖整个印度尼西亚"
     }
 }

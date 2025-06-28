@@ -85,5 +85,27 @@
         "generate_button": "Générer mon style de batik",
         "choose_motif": "Choisissez votre motif batik",
         "select_button": "Sélectionner ce motif"
+    },
+    "contact": {
+        "title": "Contactez-nous",
+        "description": "Si vous rencontrez des problèmes avec ce site, n'hésitez pas à nous contacter. Nous sommes disponibles 24h/24 et 7j/7 pour vous.",
+        "form": {
+            "name": "Nom complet",
+            "email": "Votre email",
+            "subject": "Quel est votre problème ?",
+            "message": "Message",
+            "button": "Envoyer maintenant"
+        },
+        "whatsapp": {
+            "intro": "Bonjour, je souhaite vous contacter.",
+            "name": "Nom",
+            "email": "Email",
+            "subject": "Problème",
+            "message": "Message"
+        }
+    },
+    "delivery": {
+        "titleStart": "Nous proposons plusieurs",
+        "titleEnd": "Livraisons rapides dans toute l’Indonésie"
     }
 }

@@ -85,5 +85,27 @@
         "generate_button": "Meinen Batik-Stil generieren",
         "choose_motif": "Wähle dein Batik-Motiv",
         "select_button": "Dieses Motiv wählen"
+    },
+    "contact": {
+        "title": "Kontaktieren Sie uns",
+        "description": "Wenn Sie Probleme mit dieser Website haben, zögern Sie nicht, uns zu kontaktieren. Wir sind rund um die Uhr für Sie da.",
+        "form": {
+            "name": "Vollständiger Name",
+            "email": "Ihre E-Mail",
+            "subject": "Was ist Ihr Anliegen?",
+            "message": "Nachricht",
+            "button": "Jetzt senden"
+        },
+        "whatsapp": {
+            "intro": "Hallo, ich möchte Sie kontaktieren.",
+            "name": "Name",
+            "email": "E-Mail",
+            "subject": "Anliegen",
+            "message": "Nachricht"
+        }
+    },
+    "delivery": {
+        "titleStart": "Wir bieten mehrere",
+        "titleEnd": "Schnelllieferungen in ganz Indonesien an"
     }
 }

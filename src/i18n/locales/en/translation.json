@@ -85,5 +85,27 @@
         "generate_button": "Generate My Batik Style",
         "choose_motif": "Choose Your Batik Motif",
         "select_button": "Select This Motif"
+    },
+    "contact": {
+        "title": "Contact Us",
+        "description": "If you are experiencing issues with this website, feel free to contact us. We are available 24/7 for you.",
+        "form": {
+            "name": "Full Name",
+            "email": "Your Email",
+            "subject": "What is Your Concern?",
+            "message": "Message",
+            "button": "Send Now"
+        },
+        "whatsapp": {
+            "intro": "Hello, I would like to contact you.",
+            "name": "Name",
+            "email": "Email",
+            "subject": "Concern",
+            "message": "Message"
+        }
+    },
+    "delivery": {
+        "titleStart": "We Provide Several",
+        "titleEnd": "Fast Deliveries Across Indonesia"
     }
 }

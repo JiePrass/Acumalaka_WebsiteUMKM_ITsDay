@@ -85,5 +85,27 @@
         "generate_button": "내 바틱 스타일 생성",
         "choose_motif": "바틱 무늬 선택",
         "select_button": "이 무늬 선택"
+    },
+    "contact": {
+        "title": "문의하기",
+        "description": "웹사이트 이용 중 문제가 있으시면 언제든지 문의해 주세요. 저희는 24시간 대기 중입니다.",
+        "form": {
+            "name": "성명",
+            "email": "이메일 주소",
+            "subject": "어떤 문제가 있으신가요?",
+            "message": "메시지",
+            "button": "지금 보내기"
+        },
+        "whatsapp": {
+            "intro": "안녕하세요, 문의드리고 싶습니다.",
+            "name": "이름",
+            "email": "이메일",
+            "subject": "문제",
+            "message": "메시지"
+        }
+    },
+    "delivery": {
+        "titleStart": "우리는 여러 가지를 제공합니다",
+        "titleEnd": "인도네시아 전역에 빠른 배송을 합니다"
     }
 }

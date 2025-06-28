@@ -1,0 +1,111 @@
+{
+    "nav": {
+        "home": "ホーム",
+        "batik": "バティック",
+        "store": "ストア",
+        "ai": "Batikan AI",
+        "contact": "お問い合わせ",
+        "cart": "カート",
+        "profile": "プロフィール",
+        "location": "ボゴール",
+        "language": "日本語",
+        "discountText": "ファッションに対して <highlight>Rp.250,000</highlight> 割引",
+        "search": "検索",
+        "selectLanguage": "言語を選択"
+    },
+    "footer": {
+        "tagline": "Batikan：バティックを手に入れるための頼れる友。",
+        "location": "場所",
+        "email": "メールアドレス",
+        "contact": "連絡先",
+        "social": "ソーシャルメディア",
+        "rights": "全著作権所有。",
+        "scrollLine1": "ページの一番上へ戻る",
+        "scrollLine2": ""
+    },
+    "hero": {
+        "badge": "新着",
+        "cta": "今すぐ購入",
+        "titleLine1": "バティックを購入して",
+        "titleLine2": "応援しよう",
+        "titleLine3": "<highlight>西ジャワ</highlight>から",
+        "description": "何千人ものお客様が Batikan と共に文化遺産を守る取り組みに参加しています。",
+        "hashtag1": "#バティック西ジャワ",
+        "hashtag2": "#ジャワの誇り"
+    },
+    "about": {
+        "title1": "Batikan",
+        "title2": "2025",
+        "headline": "テクノロジーを通じてインドネシアの遺産を守る<highlight>探索し、記録し、バティックの美しさを共有する</highlight>",
+        "community": "職人や研究者、文化愛好家など、インドネシア全土のバティック保存コミュニティに参加しましょう。"
+    },
+    "review": {
+        "title": "ユーザーの声",
+        "title2": "<highlight>Batikan</highlight>について",
+        "reviews": [
+            {
+                "name": "ムリヤディ・プルマナ",
+                "role": "顧客",
+                "text": "Batikanでの買い物にとても満足しています！バティックの種類が豊富で、生地の品質も素晴らしいです。",
+                "image": "/images/review-mulyadi.png"
+            },
+            {
+                "name": "アグス・セティアワン",
+                "role": "バティック愛好家",
+                "text": "Batikanは種類が豊富で、価格もお手頃です。配送も迅速で丁寧に梱包されていました！",
+                "image": "/images/review-agus.png"
+            },
+            {
+                "name": "デウィ・マハラニ",
+                "role": "ファッション愛好家",
+                "text": "AI機能がとても気に入っています！購入前に様々なバティックスタイルを試せて便利です！",
+                "image": "/images/review-dewi.png"
+            }
+        ]
+    },
+    "product": {
+        "title": "自分のスタイルに合ったバティックを選びましょう",
+        "add_to_cart": "カートに追加",
+        "buy_now": "今すぐ購入",
+        "discount": "50％オフ",
+        "filter": {
+            "all": "すべて",
+            "best_seller": "ベストセラー",
+            "popular": "人気",
+            "nearest": "近くのお店"
+        },
+        "label": {
+            "new": "新着"
+        }
+    },
+    "batikanAI": {
+        "title": "Batikan AI",
+        "description": "AIの力であなたに合ったバティックスタイルを発見しましょう。インドネシア中の何千人ものユーザーに信頼されています。",
+        "upload_button": "写真をアップロード",
+        "generate_button": "マイバティックスタイルを生成",
+        "choose_motif": "バティックの模様を選択",
+        "select_button": "この模様を選択"
+    },
+    "contact": {
+        "title": "お問い合わせ",
+        "description": "このウェブサイトに問題がある場合は、お気軽にご連絡ください。24時間365日対応しております。",
+        "form": {
+            "name": "氏名",
+            "email": "メールアドレス",
+            "subject": "ご相談内容",
+            "message": "メッセージ",
+            "button": "今すぐ送信"
+        },
+        "whatsapp": {
+            "intro": "こんにちは、ご連絡させていただきます。",
+            "name": "名前",
+            "email": "メールアドレス",
+            "subject": "ご相談内容",
+            "message": "メッセージ"
+        }
+    },
+    "delivery": {
+        "titleStart": "いくつかの",
+        "titleEnd": "迅速な配送をインドネシア全土に提供しています"
+    }
+}

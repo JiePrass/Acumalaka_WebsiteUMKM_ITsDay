@@ -85,5 +85,27 @@
         "generate_button": "Gumawa ng Aking Batik Style",
         "choose_motif": "Pumili ng Batik Motif",
         "select_button": "Piliin ang Motif na Ito"
+    },
+    "contact": {
+        "title": "Makipag-ugnayan sa Amin",
+        "description": "Kung may nararanasang problema sa website na ito, huwag mag-atubiling makipag-ugnayan sa amin. Available kami 24/7 para sa iyo.",
+        "form": {
+            "name": "Buong Pangalan",
+            "email": "Iyong Email",
+            "subject": "Ano ang Iyong Alalahanin?",
+            "message": "Mensahe",
+            "button": "Ipadala Ngayon"
+        },
+        "whatsapp": {
+            "intro": "Kumusta, nais kong makipag-ugnayan sa iyo.",
+            "name": "Pangalan",
+            "email": "Email",
+            "subject": "Alalahanin",
+            "message": "Mensahe"
+        }
+    },
+    "delivery": {
+        "titleStart": "Nagbibigay kami ng ilan",
+        "titleEnd": "Mabilis na Paghahatid sa Buong Indonesia"
     }
 }
